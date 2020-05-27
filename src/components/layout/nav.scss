@@ -1,0 +1,118 @@
+// colors
+@import '../../index.scss';
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  width: max-content;
+  margin: auto;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+nav svg {
+  margin: auto;
+  font-size: 0.7rem;
+  align-self: baseline;
+  color: $primary-blue;
+}
+.menu-left {
+  border-left: 8px solid rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+}
+nav a:hover {
+  opacity: 0.5;
+}
+a.active {
+  border-bottom: 3px solid $primary-blue;
+}
+.fa-bars {
+  display: none;
+}
+
+nav a {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #222;
+}
+
+@media screen and (max-width: 680px) {
+  nav {
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+  nav a {
+    text-align: center;
+    align-items: center;
+    display: block;
+  }
+  nav a:hover {
+    background-color: $primary-blue;
+    color: #fff;
+  }
+  nav a.active {
+    border-bottom: none;
+  }
+  .nav-icon {
+    display: none;
+  }
+  .menu-left {
+    border-left: none;
+    margin-left: 0;
+  }
+  .fa-bars {
+    display: block;
+    position: absolute ;
+    top: -2.6rem;
+    margin-left: 1rem;
+    color: $primary-blue;
+    cursor: pointer;
+  }
+  .collapsed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 0;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  .is-expanded {
+    overflow: hidden;
+    max-height: fit-content;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+}
