@@ -1,0 +1,82 @@
+@import "../index.scss";
+
+.blogContainer {
+  width: 100%;
+  padding: 20px 0px;
+  background: #fff;
+  p {
+    line-height: 20px;
+  }
+  h5 {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .blogMain {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    @media screen and (min-width: 200px) and (max-width: 800px) {
+      width: 90%;
+      flex-direction: column;
+    }
+    background: inherit;
+    .legalActivities {
+      outline: none;
+      border: none;
+      width: max-content;
+      margin: 20px auto;
+      padding: 10px;
+      background: $primary-blue;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 20px;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media screen and (min-width: 200px) and (max-width: 800px) {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+      }
+      .title {
+        width: 49%;
+        @media screen and (min-width: 200px) and (max-width: 800px) {
+          width: 100%;
+        }
+      }
+      .description {
+        width: 49%;
+        @media screen and (min-width: 200px) and (max-width: 800px) {
+          width: 100%;
+        }
+      }
+    }
+    .blogs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .blog {
+        text-align: center;
+        margin: auto;
+        @media screen and (min-width: 200px) and (max-width: 800px) {
+          min-width: 300px;
+        }
+        img {
+          height: 250px !important;
+        }
+        h4 {
+          padding: 20px 0px;
+          margin: 0px;
+          background: rgba(74, 86, 119, 0.698);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
