@@ -17,6 +17,7 @@ const Nav = () => {
 
   return (
     <>
+      {state.isExpanded && <div className="hide-nav" onClick={onChange} />}
       <nav className="nav">
         <FontAwesomeIcon
           icon="bars"
