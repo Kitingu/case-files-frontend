@@ -3,6 +3,10 @@
 .joinNetworkContainer {
   width: 100%;
   background: $background-grey;
+
+  @media screen and (min-width: 200px) and (max-width: 800px) {
+    text-align: center;
+  }
   p {
     line-height: 20px;
   }
@@ -13,7 +17,7 @@
   .joinNetworkMain {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     margin: auto;
     height: min-content;
     justify-content: space-between;
@@ -40,7 +44,6 @@
         margin-top: 20px;
       }
       .joinNetworkResources {
-        text-align: center;
       }
       .submitBtn {
         background: $primary-blue;
