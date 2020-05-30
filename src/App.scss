@@ -10,7 +10,9 @@ body {
 .topbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 645px;
+  margin: 0 auto;
   align-items: center;
 }
 .topbar img {
@@ -22,7 +24,7 @@ body {
   margin: 0.32rem;
 }
 .top-icons a {
-  background: $primary-blue;
+  background: #7285a5;
   display: inline-block;
   border-radius: 50%;
   text-align: center;
@@ -39,6 +41,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  position: relative;
 }
 .hero-text {
   text-align: center;
@@ -51,13 +54,19 @@ body {
 .hero-text h2 {
   font-size: 3rem;
 }
+.hero-text p{
+  margin: 0 auto;
+  width: 70%;
+}
 .hero-text button {
   margin-top: 1rem;
   border: none;
   border-radius: 50px;
-  padding: 0.6rem;
+  padding: 0.6rem 1rem;
   background-color: $dark-blue;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 // About
 .jumbotron {
@@ -81,6 +90,7 @@ body {
 .about p {
   line-height: 1.5rem;
   width: 40%;
+  text-justify: auto;
 }
 .boxes {
   display: flex;
@@ -95,10 +105,11 @@ body {
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 2rem;
+
 }
 .box img {
-  width: 300px;
-  height: 200px;
+  max-width:350px;
+  
 }
 .details {
   display: flex;
@@ -109,13 +120,22 @@ body {
   flex-wrap: wrap;
   left: 0;
   right: 0;
-  width: 90%;
+  width: 85%;
+  text-align: center;
+  justify-content: flex-start;
+  height: max-content;
   margin-left: auto;
   margin-right: auto;
+  color: $white;
+  border-radius: 5px;
 }
 .details a {
   color: $white;
   text-decoration: none;
+}
+// css example
+.right-arrows {
+  content: "\00BB";
 }
 footer {
   position: relative;
@@ -166,17 +186,41 @@ Media queries
   .box {
     margin: 15px auto;
   }
+  .box img{
+    width: 270px;
+  }
+
   .about p,
   .about h2 {
     margin: 5px;
     width: 80%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
   .hero-text h2 {
     font-size: 1.8rem;
   }
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    padding-top: 2rem;
+ 
+  }
+  .about h2 {
+  position: relative;
+  margin: 2rem, 10%;
+  width: 80%;
+}
+.about p {
+  line-height: 1.5rem;
+  width: 80%;
+  text-align: justify;
+  
+}
   .box {
+    justify-self: center;
     margin: 15px auto;
   }
 }

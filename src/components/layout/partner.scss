@@ -8,7 +8,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
   & .swiper-container {
     // margin: 0;
   }
@@ -17,6 +16,7 @@
     margin-top: 1rem;
     color: rgb(20, 34, 163);
     font-size: 2rem;
+    margin-left: 1rem;
   }
   &-image {
     height: auto; 

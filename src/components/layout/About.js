@@ -18,22 +18,22 @@ const CompanyDetails = () => {
           <div className="box">
             <img src={placeholder} alt="" />
             <div className="details">
-              <h3>Town Court Report, Torit, South Sudan, 2015</h3>
-              <Link to="#">Read More</Link>
+              <h5>Town Court Report, Torit, South Sudan, 2015</h5>
+              <Link to="#">Read More <span>&#187;</span> </Link>
             </div>
           </div>
           <div className="box">
             <img src={placeholder} alt="" />
             <div className="details">
-              <h3>Town Court Report, Torit, South Sudan, 2015</h3>
-              <Link to="#">Read More</Link>
+              <h5>Customary Court Report wau, South Sudan, 2015</h5>
+              <Link to="#">Read More <span>&#187;</span></Link>
             </div>
           </div>
           <div className="box">
             <img src={placeholder} alt="" />
             <div className="details">
-              <h3>Town Court Report, Torit, South Sudan, 2015</h3>
-              <Link to="#">Read More</Link>
+              <h5>Customary Court Report wau, Juba Protection of Civilians Site 2016</h5>
+              <Link to="#">Read More <span>&#187;</span> </Link>
             </div>
           </div>
         </div>

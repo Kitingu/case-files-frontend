@@ -6,14 +6,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
+  // background-color: #eee;
   width: max-content;
-  margin: auto;
+  margin: 0 auto;
   flex-wrap: wrap;
   position: absolute;
   left: 0;
   right: 0;
-  opacity: 0.9;
   z-index: 2;
 }
 
@@ -23,6 +22,7 @@ nav a {
   padding: 0.6rem;
   margin: 0;
   text-transform: capitalize;
+    background-color: #eee;
 }
 
 .hide-nav {
@@ -33,15 +33,22 @@ nav a {
   right: 0;
   z-index: 1;
 }
+.search{
+  display: inline-block;
+  background-color: #eee;
+  height: 100%;
+  padding: 10px;
+}
 
 nav svg {
   margin: auto;
   font-size: 0.7rem;
   align-self: baseline;
   color: $primary-blue;
+  background-color: #eee;
 }
 .menu-left {
-  border-left: 8px solid rgba(255, 255, 255, 0.5);
+  border-left: 8px solid transparent;
   margin-left: 10px;
 }
 nav a:hover {
@@ -68,6 +75,7 @@ nav a.active {
     height: auto;
     display: block;
     width: 100%;
+      opacity: 0.9;
   }
   nav a {
     text-align: center;
@@ -87,6 +95,9 @@ nav a.active {
   .menu-left {
     border-left: none;
     margin-left: 0;
+  }
+  .search{
+    display: none;
   }
   .fa-bars {
     display: block;
