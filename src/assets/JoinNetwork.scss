@@ -19,7 +19,7 @@
     flex-direction: row;
     width: 80%;
     margin: auto;
-    height: min-content;
+    height: fit-content;
     justify-content: space-between;
     @media screen and (min-width: 200px) and (max-width: 800px) {
       width: 90%;
@@ -28,6 +28,7 @@
     background: inherit;
     form {
       background: rgba(74, 86, 119, 0.698);
+  
       h1 {
         color: $primary-blue;
       }

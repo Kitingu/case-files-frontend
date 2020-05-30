@@ -24,8 +24,11 @@ const Nav = () => {
           className="fa fa-bars"
           onClick={onChange}
         />
-        <div className={`collapsed ${state.isExpanded ? 'is-expanded' : ''}`}>
-          <NavLink  exact to="/">
+        <div
+          onClick={onChange}
+          className={`collapsed ${state.isExpanded ? 'is-expanded' : ''}`}
+        >
+          <NavLink exact to="/">
             Home
           </NavLink>
           <NavLink exact={true} to="/about">
@@ -40,12 +43,15 @@ const Nav = () => {
           <NavLink exact={true} to="/resources">
             resources
           </NavLink>
-          <FontAwesomeIcon icon="search" className="nav-icon" />
+          <div className="search">
+            <FontAwesomeIcon icon="search" className="nav-icon" />
+          </div>
+
           <NavLink exact={true} className="menu-left" to="/signup">
             Join the network{' '}
             <FontAwesomeIcon className="nav-icon" icon="arrow-right" />
           </NavLink>
-       </div>
+        </div>
       </nav>
     </>
   );
