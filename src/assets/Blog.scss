@@ -4,6 +4,8 @@
   width: 100%;
   padding: 10px 0 100px 0px;
   background: #fff;
+  text-align: justify;
+
   p {
     line-height: 20px;
   }
@@ -11,8 +13,8 @@
     line-height: 20px;
     font-size: 15px;
   }
-  .blog{
-    padding-bottom:10px;
+  .blog {
+    padding-bottom: 10px;
   }
   .blogMain {
     display: flex;
@@ -21,7 +23,6 @@
     margin: auto;
     justify-content: space-between;
     @media screen and (min-width: 200px) and (max-width: 800px) {
-      width: 90%;
       flex-direction: column;
     }
     background: inherit;
@@ -38,17 +39,18 @@
     }
     .blog-header {
       display: flex;
+      margin: auto;
       flex-direction: row;
       justify-content: space-between;
       @media screen and (min-width: 200px) and (max-width: 800px) {
-        width: 90%;
+        width: 80%;
         flex-direction: column;
-        text-align: center;
       }
       .title {
+        text-align: left;
         width: 30%;
         @media screen and (min-width: 200px) and (max-width: 800px) {
-          width: 100%;
+          width: 100% !important;
         }
       }
       .description {
@@ -66,23 +68,22 @@
       padding-top: 40px;
 
       .blog {
-        text-align: center;
-        margin: auto;
-        width: 30%;
-        height: 200px;
-        @media screen and (max-width: 600px) {
+        width: 32%;
+        height: 300px;
+        @media screen and (max-width: 800px) {
+          min-width: 300px;
           width: 60%;
-          margin-top: 2rem;
+          margin: auto;
+          margin-top: 3rem;
         }
-        // @media screen and (min-width: 200px) and (max-width: 800px) {
-        //   max-width: 300px;   
-        // }
         img {
           height: 85%;
           margin-bottom: 0;
           width: 100%;
+          object-fit: cover;
         }
         h4 {
+          text-align: center;
           position: relative;
           padding: 20px 0;
           margin-top: -8px;

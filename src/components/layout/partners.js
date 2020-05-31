@@ -48,7 +48,7 @@ const PartnersView = () => {
     <>
       <div className="partners">
         <h4 className="partners-title">Partners:</h4>
-        <Swiper {...params}>
+        <Swiper {...params} className="swiper">
           <div>
             <img src={partner1} className="partners-image" alt="" />
           </div>
