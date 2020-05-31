@@ -10,7 +10,9 @@ body {
 .topbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
   align-items: center;
 }
 .topbar img {
@@ -32,7 +34,7 @@ body {
 }
 
 .hero-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(./images/hero-image.jpg);
   height: 70vh;
   background-position: center;
@@ -64,6 +66,7 @@ body {
   background-color: $dark-blue;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 // About
 .jumbotron {
@@ -85,7 +88,6 @@ body {
   width: 30%;
 }
 .about p {
-  line-height: 1.5rem;
   width: 40%;
   text-justify: auto;
 }
@@ -158,12 +160,13 @@ Media queries
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
   .top-icons {
     display: none;
   }
   .logo {
-    float: right;
+    float: right !important;
   }
   .hero-text {
     position: relative;

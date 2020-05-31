@@ -6,9 +6,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: #eee;
   width: max-content;
-  margin: auto;
+  margin: 0 auto;
   flex-wrap: wrap;
   position: absolute;
   left: 0;
@@ -23,6 +22,7 @@ nav a {
   margin: 0;
   text-transform: capitalize;
     background-color: #eee;
+    border-bottom:5px solid #eee;
 }
 
 .hide-nav {
@@ -38,6 +38,8 @@ nav a {
   background-color: #eee;
   height: 100%;
   padding: 10px;
+  border-bottom:5px solid #eee;
+  
 }
 
 nav svg {
@@ -55,7 +57,8 @@ nav a:hover {
   opacity: 0.5;
 }
 a.active {
-  border-bottom: 3px solid $primary-blue;
+  border-bottom: 5px solid $primary-blue;
+  border-bottom-left-radius: 1px;
 }
 .fa-bars {
   display: none;

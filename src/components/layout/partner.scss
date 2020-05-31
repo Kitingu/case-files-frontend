@@ -3,20 +3,20 @@
 
 .partners {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
   & .swiper-container {
     // margin: 0;
   }
   &-title {
     align-self: center;
     margin-top: 1rem;
-    color: rgb(20, 34, 163);
+    color: $dark-blue;
     font-size: 2rem;
+    margin-left: 1rem;
   }
   &-image {
     height: auto; 

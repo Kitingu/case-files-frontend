@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import placeholder from "../../images/placeholder.png";
+// import { Link } from "react-router-dom";
+// import placeholder from "../../images/placeholder.png";
 import "../../assets/JoinNetwork.scss";
 import publications from "../../images/publications.jpg";
 const CompanyDetails = () => {
@@ -17,9 +17,7 @@ const CompanyDetails = () => {
                 alt="publications"
               />
               <h5>
-                Join theWe share data and published materials from academic
-                research on law and activism in Eastern Africa, making them
-                accesible to other researches and stakeholder. network
+               DefendDefenders (2020) 'On the legal Frontline: Lawyers and Paralegals as Human Rights Defenders in the East and Horn of Africa'
               </h5>
               <button className="submitBtn resourcesBtn">Resources</button>
             </div>
@@ -28,9 +26,7 @@ const CompanyDetails = () => {
             <div>
               <h1>Join the network</h1>
               <p>
-                Join the We share data and published materials from academic
-                research on law and activism in Eastern Africa, making them
-                accesible to other researches and stakeholder.network
+                Lets share knowledge, make connections and strengthen networks for justice in south sudan and across Eastern Africa.  
               </p>
               <input type="text" placeholder="Full name" />
               <input type="email" placeholder="email" />

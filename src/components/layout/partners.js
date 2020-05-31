@@ -1,10 +1,12 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
 import './partner.scss';
-import partner1 from '../../images/partner-1.jpg';
-import partner2 from '../../images/partner-2.jpg';
-import partner3 from '../../images/partner-3.jpg';
-import partner4 from '../../images/partner-4.jpg';
+import partner1 from '../../images/partner-1.png';
+import partner2 from '../../images/partner-2.png';
+import partner3 from '../../images/partner-3.png';
+import partner4 from '../../images/partner-4.png';
+import partner5 from '../../images/partner-5.png';
+import partner6 from '../../images/partner-6.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const params = {
@@ -54,10 +56,16 @@ const PartnersView = () => {
             <img src={partner2} className="partners-image" alt="" />
           </div>
           <div>
-            <img src={partner3} className="partners-image"alt="" />
+            <img src={partner3} className="partners-image" alt="" />
           </div>
           <div>
             <img src={partner4} className="partners-image" alt="" />
+          </div>
+          <div>
+            <img src={partner5} className="partners-image" alt="" />
+          </div>
+          <div>
+            <img src={partner6} className="partners-image" alt="" />
           </div>
         </Swiper>
       </div>
@@ -75,15 +83,40 @@ const PartnersView = () => {
             </ul>
           </div>
           <div className="social-links">
-           <a target="_blank" rel="noopener noreferrer" href="https://facebook.com"> <FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
-           <a target="_blank" rel="noopener noreferrer" href="https://twitter.com"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-           <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a>
-           <a target="_blank" rel="noopener noreferrer" href="https://instagram.com"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://facebook.com"
+            >
+              {' '}
+              <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com"
+            >
+              <FontAwesomeIcon icon={['fab', 'twitter']} />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://linkedin.com"
+            >
+              <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://instagram.com"
+            >
+              <FontAwesomeIcon icon={['fab', 'instagram']} />
+            </a>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default PartnersView;
