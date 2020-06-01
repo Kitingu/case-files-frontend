@@ -122,15 +122,25 @@ body {
   width: 85%;
   text-align: center;
   justify-content: flex-start;
-  height: max-content;
+  height: 6.5rem;
   margin-left: auto;
   margin-right: auto;
   color: $white;
   border-radius: 5px;
+  font-size: 1rem;
 }
 .details a {
   color: $white;
   text-decoration: none;
+  position: absolute;
+  bottom: 3px;
+  left:0;
+  right: 0;
+
+}
+.details p{
+  padding: 0;
+  margin: 0;
 }
 // css example
 .right-arrows {
@@ -154,7 +164,22 @@ footer {
 /* 
 Media queries
 */
+@media screen and (max-width: 360px) {
+.hero-text {
+    position: relative;
+    margin: auto;
+    padding-top: 4rem;
+  }
+  .hero-text h2 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .hero-text button{
+   margin-top: 2px;
+   margin-bottom: 5px;
+  }
 
+}
 @media screen and (max-width: 680px) {
   .topbar {
     flex-direction: row-reverse;
@@ -173,6 +198,9 @@ Media queries
     padding-top: 4rem;
     margin: auto;
   }
+  // .hero-text button{
+
+  // }
   .hero-text h2 {
     font-size: 1.5rem;
   }
@@ -214,7 +242,7 @@ Media queries
   width: 80%;
 }
 .about p {
-  line-height: 1.5rem;
+
   width: 80%;
   text-align: justify;
   

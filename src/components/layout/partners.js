@@ -1,5 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Swiper from 'react-id-swiper';
+import Back2Top from 'react-back2top';
 import './partner.scss';
 import partner1 from '../../images/partner-1.png';
 import partner2 from '../../images/partner-2.png';
@@ -82,36 +84,44 @@ const PartnersView = () => {
               <li>Partners</li>
             </ul>
           </div>
-          <div className="social-links">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://facebook.com"
-            >
-              {' '}
-              <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com"
-            >
-              <FontAwesomeIcon icon={['fab', 'twitter']} />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://linkedin.com"
-            >
-              <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://instagram.com"
-            >
-              <FontAwesomeIcon icon={['fab', 'instagram']} />
-            </a>
+          <div className="left-footer">
+            <div className="social-links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://facebook.com"
+              >
+                {' '}
+                <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com"
+              >
+                <FontAwesomeIcon icon={['fab', 'twitter']} />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://linkedin.com"
+              >
+                <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com"
+              >
+                <FontAwesomeIcon icon={['fab', 'instagram']} />
+              </a>
+            </div>
+            <Back2Top>
+            <div className="back-to-top">
+              <span><FontAwesomeIcon icon="caret-up"/></span>
+              Back to top
+            </div>
+            </Back2Top>
           </div>
         </div>
       </div>
