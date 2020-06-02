@@ -11,28 +11,43 @@ const CompanyDetails = () => {
           <div className="joinNetworkDiv">
             <div className="joinNetworkResources">
               <h1>Read publications on law and activism</h1>
-              <img
-                src={publications}
-                style={{ height: "300px" }}
-                alt="publications"
-              />
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://defenddefenders.org/on-the-legal-frontline-lawyers-and-paralegals-as-human-rights-defenders-in-the-east-and-horn-of-africa/"
+              >
+                <img
+                  src={publications}
+                  style={{ height: '300px' }}
+                  alt="publications"
+                />
+              </a>
               <h5>
-               DefendDefenders (2020) 'On the legal Frontline: Lawyers and Paralegals as Human Rights Defenders in the East and Horn of Africa'
+                DefendDefenders (2020) 'On the legal Frontline: Lawyers and
+                Paralegals as Human Rights Defenders in the East and Horn of
+                Africa'
               </h5>
-              <button className="submitBtn resourcesBtn">Resources</button>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://defenddefenders.org/on-the-legal-frontline-lawyers-and-paralegals-as-human-rights-defenders-in-the-east-and-horn-of-africa/"
+              >
+                <button className="submitBtn resourcesBtn">Resources</button>
+              </a>
             </div>
           </div>
           <form className="joinNetworkDiv">
             <div>
               <h1>Join the network</h1>
               <p>
-                Lets share knowledge, make connections and strengthen networks for justice in south sudan and across Eastern Africa.  
+                Lets share knowledge, make connections and strengthen networks
+                for justice in south sudan and across Eastern Africa.
               </p>
               <input type="text" placeholder="Full name" />
-              <input type="email" placeholder="email" />
-              <input type="password" placeholder="password" />
-              <input type="password" placeholder="confirm password" />
-              <input className="submitBtn " type="submit" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm password" />
+              <input className="submitBtn " type="submit" value="Submit" />
             </div>
           </form>
         </div>

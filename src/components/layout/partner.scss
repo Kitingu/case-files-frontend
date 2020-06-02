@@ -8,12 +8,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
   & .swiper-container {
     // margin: 0;
   }
   &-title {
     align-self: center;
-    margin-top: 2rem;
     padding-right: 1rem;
     color: $dark-blue;
     font-size: 2rem;
@@ -34,12 +34,14 @@
   width: 100%;
   margin: 0 auto;
   background-color: #eee;
+      padding: 20px;
   .footer-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 75%;
-    margin: 0 auto;
+    margin: auto;
+
     & .links {
       &-title {
         font-size: 1.125rem;
@@ -89,7 +91,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 10px 15px 0;
+  // margin: 10px 0 15px 0;
   // width: 30%;
 }
            

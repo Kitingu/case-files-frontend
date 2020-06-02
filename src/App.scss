@@ -52,9 +52,10 @@ body {
   color: $white;
 }
 .hero-text h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  line-height: 2.5rem;
 }
-.hero-text p{
+.hero-text p {
   margin: 0 auto;
   width: 70%;
 }
@@ -79,7 +80,8 @@ body {
   justify-content: space-between;
   position: relative;
   margin: 0 10%;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   height: max-content;
 }
 .about h2 {
@@ -104,11 +106,9 @@ body {
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 2rem;
-
 }
 .box img {
-  max-width:350px;
-  
+  max-width: 350px;
 }
 .details {
   display: flex;
@@ -122,29 +122,29 @@ body {
   width: 85%;
   text-align: center;
   justify-content: flex-start;
-  height: 6.5rem;
+  height: 4.8rem;
   margin-left: auto;
   margin-right: auto;
   color: $white;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 10px;
 }
 .details a {
   color: $white;
   text-decoration: none;
   position: absolute;
   bottom: 3px;
-  left:0;
+  left: 0;
   right: 0;
-
 }
-.details p{
+.details p {
   padding: 0;
   margin: 0;
 }
 // css example
 .right-arrows {
-  content: "\00BB";
+  content: '\00BB';
 }
 footer {
   position: relative;
@@ -165,7 +165,10 @@ footer {
 Media queries
 */
 @media screen and (max-width: 360px) {
-.hero-text {
+  .hero-image{
+    height:300px;
+  }
+  .hero-text {
     position: relative;
     margin: auto;
     padding-top: 4rem;
@@ -174,11 +177,10 @@ Media queries
     font-size: 1rem;
     margin-top: 0;
   }
-  .hero-text button{
-   margin-top: 2px;
-   margin-bottom: 5px;
+  .hero-text button {
+    margin-top: 2px;
+    margin-bottom: 5px;
   }
-
 }
 @media screen and (max-width: 680px) {
   .topbar {
@@ -193,6 +195,9 @@ Media queries
   .logo {
     float: right !important;
   }
+  .hero-image{
+    height:400px;
+  }
   .hero-text {
     position: relative;
     padding-top: 4rem;
@@ -202,6 +207,7 @@ Media queries
 
   // }
   .hero-text h2 {
+    padding-top: 0;
     font-size: 1.5rem;
   }
   .about {
@@ -214,7 +220,7 @@ Media queries
   .box {
     margin: 15px auto;
   }
-  .box img{
+  .box img {
     width: 270px;
   }
 
@@ -225,6 +231,9 @@ Media queries
   }
 }
 @media screen and (max-width: 890px) {
+  .hero-image{
+    height:500px;
+  }
   .hero-text h2 {
     font-size: 1.8rem;
   }
@@ -234,19 +243,16 @@ Media queries
     align-content: center;
     position: relative;
     padding-top: 2rem;
- 
   }
   .about h2 {
-  position: relative;
-  margin: 2rem, 10%;
-  width: 80%;
-}
-.about p {
-
-  width: 80%;
-  text-align: justify;
-  
-}
+    position: relative;
+    margin: 2rem, 10%;
+    width: 80%;
+  }
+  .about p {
+    width: 80%;
+    text-align: justify;
+  }
   .box {
     justify-self: center;
     margin: 15px auto;
