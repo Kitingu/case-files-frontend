@@ -10,7 +10,7 @@ const CompanyDetails = () => {
         <div className="joinNetworkMain">
           <div className="joinNetworkDiv">
             <div className="joinNetworkResources">
-              <h1>Read publications on law and activism</h1>
+              <h1>Access publications on justice</h1>
               <a
                 rel="noopener noreferrer"
                 target="_blank"

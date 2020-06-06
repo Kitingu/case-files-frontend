@@ -14,9 +14,9 @@ const CompanyDetails = () => {
             <h1 className="title">Read our blog on citizen activism</h1>
 
             <p className="description"> 
-             Lawyers, paralegals and citizens in South Sudan are working 
-             to improve the justice system  'from below' despite limited resources 
-             and constant risks. we narrate some of their experiences...
+            What do policymakers in the East and Horn of Africa need to know
+            about justice, human rights, democracy peace and diversity? We
+            publish refletions from academic and practical experts.
             </p>
           </div>
           <div className="blogs">

@@ -76,12 +76,12 @@ const PartnersView = () => {
           <div className="links">
             <h5 className="links-title">Links</h5>
             <ul className="links-list">
-              <li>Home</li>
-              <li>Archives</li>
+              <li>About us</li>
               <li>Courts</li>
-              <li>The Network</li>
-              <li>Legal Activities</li>
-              <li>Partners</li>
+              <li>Legal Activitism</li>
+              <li>Resources</li>
+              <li>Blog</li>
+              <li>Join the Network</li>
             </ul>
           </div>
           <div className="left-footer">
@@ -117,10 +117,12 @@ const PartnersView = () => {
               </a>
             </div>
             <Back2Top>
-            <div className="back-to-top">
-              <span><FontAwesomeIcon icon="caret-up"/></span>
-              Back to top
-            </div>
+              <div className="back-to-top">
+                <span>
+                  <FontAwesomeIcon icon="caret-up" />
+                </span>
+                Back to top
+              </div>
             </Back2Top>
           </div>
         </div>

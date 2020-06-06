@@ -38,10 +38,13 @@ const Nav = () => {
             Courts
           </NavLink>
           <NavLink exact={true} to="/legal">
-            Legal Activities
+            Legal Activism
           </NavLink>
           <NavLink exact={true} to="/resources">
             resources
+          </NavLink>
+          <NavLink exact={true} to="/resources">
+            Blog
           </NavLink>
           <div className="search">
             <FontAwesomeIcon icon="search" className="nav-icon" />
