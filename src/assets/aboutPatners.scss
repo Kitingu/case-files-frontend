@@ -1,0 +1,37 @@
+@import "../index.scss";
+.aboutPatnersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $background-grey;
+  text-align: center;
+  margin: auto;
+  padding: 15px 0px;
+
+  > h1 {
+    width: 70%;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+    margin: auto;
+    color: $primary-blue;
+    padding: 10px 0px;
+  }
+  .patners {
+    width: 70%;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > div {
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+      width: 30%;
+      min-width: 200px;
+    }
+  }
+}
