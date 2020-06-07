@@ -1,0 +1,267 @@
+@import './index.scss';
+** {
+  clear: both;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 750px;
+  margin: 0 auto;
+  align-items: center;
+}
+.topbar img {
+  height: 3rem;
+}
+.topbar svg {
+  color: $white;
+  font-size: 1.3rem;
+  margin: 0.32rem;
+}
+.top-icons a {
+  background: #7285a5;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0.32rem;
+  width: 2.1rem;
+  border: none;
+}
+
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(./images/hero-image.jpg);
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+}
+.hero-about{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(./images/service_4.jpeg);
+    background-position: center;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+}
+.hero-text h2 {
+  font-size: 2.6rem;
+  line-height: 2.5rem;
+}
+.hero-text p {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 1rem;
+}
+.hero-text button {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1rem;
+  background-color: $dark-blue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+// About
+.jumbotron {
+  background: $background-grey;
+  position: relative;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 10%;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  height: max-content;
+}
+.about h2 {
+  position: relative;
+  margin: 2rem, 10%;
+  width: 30%;
+}
+.about p {
+  width: 40%;
+  text-align: left;
+}
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 10%;
+  position: relative;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.box {
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.box img {
+  max-width: 350px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  background: rgb(74, 86, 119);
+  position: absolute;
+  bottom: -0.9rem;
+  flex-wrap: wrap;
+  left: 0;
+  right: 0;
+  width: 85%;
+  text-align: center;
+  justify-content: flex-start;
+  height: 4.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+.details a {
+  color: $white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  font-size: 0.8rem;
+}
+.details p {
+  padding: 0;
+  margin: 0;
+}
+// css example
+.right-arrows {
+  content: '\00BB';
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.copyright {
+  background: black;
+  color: $white;
+  margin: auto;
+  padding: 0.6rem;
+  word-wrap: break-word;
+}
+
+/* 
+Media queries
+*/
+@media screen and (max-width: 360px) {
+  .hero-image{
+    height:300px;
+  }
+  .hero-text {
+    position: relative;
+    margin: auto;
+    padding-top: 4rem;
+  }
+  .hero-text h2 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .hero-text button {
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .topbar {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .top-icons {
+    display: none;
+  }
+  .logo {
+    float: right !important;
+  }
+  .hero-image{
+    height:400px;
+  }
+  .hero-text {
+    position: relative;
+    padding-top: 4rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width:680px){
+   .hero-text h2 {
+    padding-top: 0;
+    font-size: 1.5rem;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    padding-top: 2rem;
+  }
+  .box {
+    margin: 15px auto;
+  }
+  .box img {
+    width: 270px;
+  }
+
+  .about p,
+  .about h2 {
+    margin: 5px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .hero-image{
+    height:500px;
+  }
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    padding-top: 2rem;
+  }
+  .about h2 {
+    position: relative;
+    margin: 2rem, 10%;
+    width: 80%;
+  }
+  .about p {
+    width: 80%;
+    text-align: justify;
+  }
+  .box {
+    justify-self: center;
+    margin: 15px auto;
+  }
+}

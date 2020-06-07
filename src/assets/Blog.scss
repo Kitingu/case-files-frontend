@@ -1,0 +1,96 @@
+@import "../index.scss";
+
+.blogContainer {
+  width: 100%;
+  padding: 2.5rem 0 100px 0px;
+  background: #fff;
+  text-align: justify;
+
+  p {
+    line-height: 20px;
+  }
+  h5 {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .blog {
+    padding-bottom: 10px;
+  }
+  .blogMain {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    @media screen and (min-width: 200px) and (max-width: 800px) {
+      flex-direction: column;
+    }
+    background: inherit;
+    .legalActivities {
+      outline: none;
+      border: none;
+      width: max-content;
+      margin: 20px auto;
+      padding: 10px;
+      background: $primary-blue;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 20px;
+    }
+    .blog-header {
+      display: flex;
+      margin: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      @media screen and (min-width: 200px) and (max-width: 800px) {
+        width: 80%;
+        flex-direction: column;
+      }
+      .title {
+        text-align: left;
+        width: 30%;
+        @media screen and (min-width: 200px) and (max-width: 800px) {
+          width: 100% !important;
+        }
+      }
+      .description {
+        width: 40%;
+        @media screen and (min-width: 200px) and (max-width: 800px) {
+          width: 100%;
+        }
+      }
+    }
+    .blogs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 40px;
+
+      .blog {
+        width: 32%;
+        height: 300px;
+        @media screen and (max-width: 800px) {
+          min-width: 250px;
+          width: 60%;
+          margin: auto;
+          margin-top: 3rem;
+        }
+        img {
+          height: 85%;
+          margin-bottom: 0;
+          width: 100%;
+          object-fit: cover;
+        }
+        h4 {
+          text-align: center;
+          position: relative;
+          padding: 20px 0;
+          margin-top: -8px;
+          background: rgba(74, 86, 119, 0.698);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
