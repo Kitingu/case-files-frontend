@@ -159,7 +159,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
 }
 .copyright {
   background: black;
@@ -167,8 +166,14 @@ footer {
   margin: auto;
   padding: 0.6rem;
   word-wrap: break-word;
+  text-align: center;
 }
-
+.primary-blue{
+   background-color: #7285a5;
+}
+.default{
+    background-color: #eee;
+}
 /* 
 Media queries
 */

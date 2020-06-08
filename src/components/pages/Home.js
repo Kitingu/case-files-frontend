@@ -4,6 +4,7 @@ import About from "../layout/About";
 import JoinNetwork from "../layout/JoinNetwork";
 import Blog from "../layout/Blog";
 import PartnersView from '../layout/partners'
+import FooterLinks from "../layout/FooterLinks";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Blog />
       <JoinNetwork />
        <PartnersView />
+       <FooterLinks color="default"/>
     </>
   );
 };

@@ -1,4 +1,4 @@
-@import "../index.scss";
+@import '../index.scss';
 
 .sliderContainer {
   display: flex;
@@ -26,9 +26,19 @@
     display: flex;
     flex-direction: row;
     
+    a{
+     color: #000000; 
+     font-weight: bold;
+     text-decoration: none;
+     
+    }
+
     .slide {
-  
-      // text-align: center;
+     div{
+       display: inline;
+     }
+     word-wrap: break-word;
+      font-size: 14px;
       margin: auto;
       margin: 5px 10px;
       background: $background-grey;
@@ -36,16 +46,20 @@
     }
   }
 }
-@media screen and (max-width:600px){
 
+.read-more-less--more,
+.read-more-less--less {
+  font-weight: bold;
 }
-@media screen and (min-width: 600px) and (max-width: 900px){
+@media screen and (max-width: 600px) {
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .slide {
-width: 50%;
+    width: 50%;
   }
 }
-@media screen and (min-width:900px){
+@media screen and (min-width: 900px) {
   .slide {
-width: 33%;
+    width: 33%;
   }
 }
