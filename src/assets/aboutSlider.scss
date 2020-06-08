@@ -1,0 +1,34 @@
+@import "../index.scss";
+
+.sliderContainer {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  padding: 30px 0px;
+  justify-content: space-between;
+  @media screen and (max-width: 800px) {
+    width: 96%;
+  }
+  .controlButton {
+    font-weight: 600;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .slides {
+    display: flex;
+    flex-direction: row;
+    .slide {
+      margin: 5px 10px;
+      background: $background-grey;
+      padding: 10px;
+    }
+  }
+}
