@@ -11,6 +11,7 @@ const About = () => {
       <AboutDetails />
       <AboutSlider />
       <AboutPatners />
+      
     </div>
   );
 };
