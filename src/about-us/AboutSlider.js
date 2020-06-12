@@ -68,22 +68,22 @@ export default () => {
   }, [page, width]);
 
   return (
-    <div className='sliderContainer'>
+    <div className="sliderContainer">
       <button
         onClick={() => {
           page > 0 && setPage(page - 1);
         }}
-        className='controlButton'
+        className="controlButton"
       >
         <img src={back} alt="back" />
       </button>{' '}
       <div className="slides">
         {slideData.map((slide) => (
           <div key={slide.header} className="slide">
-              <strong>{slide.header} </strong>
-              <ShowMoreText width={450}>
-                {ReactHtmlParser(slide.content)}
-              </ShowMoreText>
+            <strong>{slide.header} </strong>
+            <ShowMoreText width={450} more="Read more" less="read less">
+              {ReactHtmlParser(slide.content)}
+            </ShowMoreText>
           </div>
         ))}
       </div>
@@ -91,9 +91,9 @@ export default () => {
         onClick={() => {
           page < data.length - itemPerSlide && setPage(page + 1);
         }}
-        className='controlButton'
+        className="controlButton"
       >
-        <img src={next} alt='next' />
+        <img src={next} alt="next" />
       </button>
     </div>
   );
