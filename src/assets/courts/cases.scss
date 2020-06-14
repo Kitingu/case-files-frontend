@@ -11,6 +11,7 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
     > button {
       border: none;
       outline: none;
@@ -27,7 +28,7 @@
       .border {
         height: 4px;
         width: 70%;
-        margin: auto;
+        margin: 0px auto;
       }
     }
   }
@@ -35,16 +36,21 @@
     > div {
       > h2 {
         color: $primary-blue;
+        margin: 7px auto;
+      }
+      > h4 {
+        margin: 10px auto;
       }
       > p {
         text-align: justify;
+        margin: 7px auto;
       }
       > div {
         > button {
           background-color: #7285a5;
           border: none;
           color: #fff;
-          padding: 5px;
+          padding: 5px 20px;
           margin-right: 5px;
           outline: none;
           font-weight: 600;
