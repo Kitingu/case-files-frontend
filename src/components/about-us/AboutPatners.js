@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import placeholder from "../images/placeholder.png";
-import partner1 from "../images/partner-1.png";
-import partner2 from "../images/partner-2.png";
-import partner3 from "../images/partner-3.png";
-import partner4 from "../images/partner-4.png";
-import partner5 from "../images/partner-5.png";
-import partner6 from "../images/partner-6.png";
-import "../assets/aboutPatners.scss";
+import partner1 from "../../images/partner-1.png";
+import partner2 from "../../images/partner-2.png";
+import partner3 from "../../images/partner-3.png";
+import partner4 from "../../images/partner-4.png";
+import partner5 from "../../images/partner-5.png";
+import partner6 from "../../images/partner-6.png";
+import "../../assets/aboutPatners.scss";
 export default () => {
   return (
     <>

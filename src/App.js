@@ -9,6 +9,7 @@ import Footer from './components/layout/Footer';
 import About from './components/pages/About';
 import Register from './components/auth/Register';
 import Home from './components/pages/Home';
+import Courts from './components/pages/courts';
 library.add(fab, faSearch, faArrowRight, faBars, faCaretUp);
 
 const App =() => {
@@ -21,6 +22,7 @@ const App =() => {
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/register" component={Register} />
+            <Route exact path="/courts" component={Courts} />
           </Switch>
           <Footer />
         </>
