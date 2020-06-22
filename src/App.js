@@ -7,6 +7,8 @@ import {
   faArrowRight,
   faBars,
   faCaretUp,
+  faFilePdf,
+  faFileWord
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
 import Header from "./components/layout/Header";
@@ -20,7 +22,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-library.add(fab, faSearch, faArrowRight, faBars, faCaretUp);
+library.add(fab, faSearch, faArrowRight, faBars, faCaretUp,faFilePdf,faFileWord);
 
 const App = () => {
   return (

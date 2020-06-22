@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import '../../index.scss';
 
 .casesContainer {
   width: 80%;
@@ -11,7 +11,7 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     > button {
       border: none;
       outline: none;
@@ -19,11 +19,12 @@
       color: #fff;
       font-size: 30px;
       font-weight: 900;
-      padding: 0px 20px;
+      padding: 2px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       .country {
+        text-transform: capitalize;
       }
       .border {
         height: 4px;
@@ -49,11 +50,20 @@
         > button {
           background-color: #7285a5;
           border: none;
+          font-size: 18px;
           color: #fff;
           padding: 5px 20px;
           margin-right: 5px;
           outline: none;
           font-weight: 600;
+          @media screen and (max-width: 610px) {
+            font-size: 15px;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+          }
         }
       }
       > button {
@@ -94,4 +104,15 @@
       }
     }
   }
+}
+.download-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  button {
+    margin-bottom: 5px;
+  }
+}
+.observer {
+  font-style: italic;
+  font-weight: 600;
 }
