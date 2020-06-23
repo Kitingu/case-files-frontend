@@ -28,7 +28,7 @@ export default () => {
         ))}
       </div>
       <Pagination
-        itemsPerPage={2}
+        itemsPerPage={4}
         activePageStyle={{ backgroundColor: "#7285a5", color: "#fff" }}
         next={<img src={next} alt="next" />}
         prev={<img src={back} alt="back" />}
