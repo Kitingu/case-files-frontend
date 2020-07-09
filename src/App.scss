@@ -274,3 +274,18 @@ Media queries
     margin: 15px auto;
   }
 }
+
+.sign-up{
+  text-align: center;
+  display:flex;
+  align-items: center;
+  min-width: 500px;
+}
+.is-invalid {
+  border-radius: 20%;
+  border-color: #9f3a38;
+}
+.invalid-feedback{
+  color:red;
+  font-size:12px;
+}

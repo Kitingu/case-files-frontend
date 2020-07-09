@@ -7,9 +7,10 @@ import back from '../../images/back.png';
 import next from '../../images/next.png';
 const data = [
   {
-    header: 'Provide insights from research into the law inpractice',
+    header:
+      ' <a href= "https://namati.org"> Provide insights from research into the law inpractice </a>',
     content:
-      '<span> in conflict and crisis settings in Eastern Africa, where most people only have access to local courts; and where customary or religious laws and authorities often command legitimacy. Our research demonstrates that efforts to deliver and promote ‘law from below’ continue despite conflict and ‘fragility.’ Documenting court proceedings can enrich our understanding of law, politics and society; it can also enable legal empowerment <a href= "https://namati.org"> read me</a>  public scrutiny, and social accountability across the region.</span>',
+      '<span> in conflict and crisis settings in Eastern Africa, where most people only have access to local courts; and where customary or religious laws and authorities often command legitimacy. Our research demonstrates that efforts to deliver and promote ‘law from below’ continue despite conflict and ‘fragility.’ Documenting court proceedings can enrich our understanding of law, politics and society; it can also enable legal empowerment public scrutiny, and social accountability across the region.</span>',
   },
   {
     header: 'Share knowledge and research materials',
@@ -29,9 +30,9 @@ const data = [
   },
   {
     header:
-      'Connect activists to researchers and encourage participatory action research',
+      '<a href="https://www.participatorymethods.org/task/research-and-analyse"> Connect activists to researchers and encourage participatory action research </a>',
     content:
-      '<a href="https://www.participatorymethods.org/task/research-and-analyse"> read me </a> as a viable and ethical method of contributing to academic knowledge.',
+      'as a viable and ethical method of contributing to academic knowledge.',
   },
 ];
 const useWindowSize = () => {
@@ -80,7 +81,7 @@ export default () => {
       <div className="slides">
         {slideData.map((slide) => (
           <div key={slide.header} className="slide">
-            <strong>{slide.header} </strong>
+            <span className="slider-heading"> {ReactHtmlParser(slide.header)} </span>
             <ShowMoreText width={450} more="Read more" less="read less">
               {ReactHtmlParser(slide.content)}
             </ShowMoreText>
