@@ -56,7 +56,7 @@ nav svg {
 nav a:hover {
   opacity: 0.5;
 }
-a.active {
+nav a.active {
   border-bottom: 5px solid $primary-blue;
   border-bottom-left-radius: 1px;
 }

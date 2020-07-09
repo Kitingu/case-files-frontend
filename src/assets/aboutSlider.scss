@@ -27,13 +27,17 @@
     flex-direction: row;
     
     a{
-     color: #000000; 
-     font-weight: bold;
+     color:$primary-blue;
+     font-weight: bolder;
      text-decoration: none;
      
     }
 
     .slide {
+      color:$primary-blue;
+      .slider-heading{
+        font-weight: bolder;
+      }
      div{
        display: inline;
      }

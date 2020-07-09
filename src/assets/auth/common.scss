@@ -1,0 +1,132 @@
+@import "../../index.scss";
+
+.intro-container {
+  background: $background-grey;
+  padding: 20px 0px;
+
+  > p {
+    width: 55%;
+    margin: auto;
+    padding: 10px 0px;
+    color: $dark-blue;
+  }
+  > h2 {
+    padding: 0px 10px;
+    color: #ffff;
+    margin: auto;
+    background: $dark-blue;
+    width: fit-content;
+    border-radius: 1px;
+  }
+}
+.join-network-container {
+  -webkit-box-shadow: 4px 6px 5px 0px rgba(94, 94, 94, 1);
+  -moz-box-shadow: 4px 6px 5px 0px rgba(94, 94, 94, 1);
+  box-shadow: 4px 6px 5px 0px rgba(94, 94, 94, 1);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  margin: 3% auto;
+  justify-content: space-between;
+  border-radius: 20px !important;
+  width: 55%;
+  @media screen and (min-width: 200px) and (max-width: 800px) {
+    width: 90%;
+  }
+  @media screen and (min-width: 200px) and (max-width: 600px) {
+    flex-direction: column-reverse !important;
+  }
+  > div {
+    padding: 1%;
+  }
+  .form {
+    width: 63%;
+    @media screen and (min-width: 200px) and (max-width: 600px) {
+      width: 100%;
+    }
+    background: $background-grey;
+    > form {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+
+      .affiliation {
+        min-height: 70px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        background-color: white;
+      }
+      textarea {
+        background-color: white;
+      }
+      > input {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        min-width: 95%;
+        margin: 10px auto;
+        outline: none;
+        background-color: white;
+      }
+      label {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        min-width: 95%;
+        margin: 15px auto;
+        outline: none;
+        background-color: white;
+      }
+      > input[type="file"] {
+        display: none;
+      }
+      > button {
+        outline: none;
+        border: none;
+        margin: 15px auto;
+        width: fit-content;
+        background: $dark-blue;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 7px;
+      }
+      > p {
+        margin: 0;
+        font-weight: normal;
+      }
+      > h4 {
+        margin: 0;
+      }
+    }
+  }
+  .info {
+    @media screen and (min-width: 200px) and (max-width: 600px) {
+      width: 100%;
+    }
+    width: 33%;
+    padding: 1%;
+    background: $dark-blue;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > div {
+      height: fit-content;
+      margin: auto;
+      > p {
+        font-weight: 300;
+      }
+      > a {
+        color: #fff;
+        border: solid #fff 1px;
+        text-decoration: none;
+        padding: 2px 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
