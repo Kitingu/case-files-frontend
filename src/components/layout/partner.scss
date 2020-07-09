@@ -1,5 +1,5 @@
-@import "../../index.scss";
-@import "../../../node_modules/swiper/css/swiper.css";
+@import '../../index.scss';
+@import '../../../node_modules/swiper/css/swiper.css';
 
 .partners {
   width: 100%;
@@ -46,7 +46,7 @@
         font-size: 1.125rem;
         display: flex;
         &:after {
-          content: "";
+          content: '';
           align-self: center;
           margin-left: 2rem;
           height: 1px;
@@ -61,10 +61,12 @@
         list-style: none;
         width: 80%;
         padding: 0;
-        & li {
+        & a {
           width: 50%;
+          color: #000;
+          text-decoration: none;
           &:before {
-            content: "\203A";
+            content: '\203A';
             font-weight: 700;
             padding-right: 8px;
           }
@@ -85,28 +87,25 @@
     }
   }
 }
-.left-footer{
-  display:flex;
+.left-footer {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-           
-.back-to-top{
+
+.back-to-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 @media screen and (max-width: 680px) {
   .partners {
     padding: 0;
-    width:90%;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: center;
-    
-
 
     & .swiper-container {
       // margin: 0;
@@ -125,15 +124,15 @@
       object-fit: scale-down;
     }
   }
-// @media screen and (max-width: 600px){
-// .partners{
-//   width: 90%;
-//   flex-wrap: wrap;
-// }
-// .swiper{
-//   // display: flex;
-// }
-// }
+  // @media screen and (max-width: 600px){
+  // .partners{
+  //   width: 90%;
+  //   flex-wrap: wrap;
+  // }
+  // .swiper{
+  //   // display: flex;
+  // }
+  // }
   .foot-link {
     .footer-links {
       width: 90%;
@@ -142,7 +141,7 @@
           font-size: 1.125rem;
           display: flex;
           &:after {
-            content: "";
+            content: '';
             align-self: center;
             margin-left: 2rem;
             height: 1px;
@@ -157,10 +156,10 @@
           list-style: none;
           width: 60%;
           padding: 0;
-          & li {
+          & a {
             width: 70%;
             &:before {
-              content: "\203A";
+              content: '\203A';
               font-weight: 700;
               padding-right: 8px;
             }
@@ -178,5 +177,10 @@
         }
       }
     }
+  }
+}
+.foot-link .footer-links .links-list a.active{
+  span{
+border-bottom: 2px solid rgb(42, 40, 40);
   }
 }

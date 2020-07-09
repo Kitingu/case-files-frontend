@@ -36,7 +36,7 @@ body {
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(./images/hero-image.jpg);
-  height: 70vh;
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,6 +47,10 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(./images/service_4.jpeg);
     background-position: center;
+}
+.hero-courts{
+background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(./images/justice.jpeg);
 }
 .hero-text {
   text-align: center;
@@ -269,4 +273,19 @@ Media queries
     justify-self: center;
     margin: 15px auto;
   }
+}
+
+.sign-up{
+  text-align: center;
+  display:flex;
+  align-items: center;
+  min-width: 500px;
+}
+.is-invalid {
+  border-radius: 20%;
+  border-color: #9f3a38;
+}
+.invalid-feedback{
+  color:red;
+  font-size:12px;
 }

@@ -1,0 +1,25 @@
+@import "../index.scss";
+.court-details{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+    @media screen and (max-width:600px){
+        width:90%
+    }
+    }
+
+.court-details h3{
+    align-self: center;
+    padding:2px 50px;
+    background-color: $dark-blue;
+    color: $white;
+    font-weight:bold;
+    font-size: 2rem;
+    margin: 40px;
+}
+.court-details p{
+    text-align: justify;
+    color:$dark-blue;
+}
