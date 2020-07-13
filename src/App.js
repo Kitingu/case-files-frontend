@@ -24,6 +24,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import SignUp from "./components/pages/SignUp";
 import axios from 'axios'
+import LegalActivism from "./components/pages/LegalActivism";
 library.add(fab, faSearch, faArrowRight, faBars, faCaretUp,faFilePdf,faFileWord);
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
               <Route exact path="/courts" component={Courts} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={SignUp} />
+              <Route exact path="/legal" component={LegalActivism} />
             </Switch>
             <Footer />
           </>
