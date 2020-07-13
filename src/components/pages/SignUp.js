@@ -8,9 +8,3 @@ const SignUp = ({ match }) => {
   return <JoinNetwork signup={match.path === "/signup"} />;
 };
 export default SignUp;
-
-/* <div>
-<Hero />
-<Signup />
-<FooterLinks color="primary-blue" />
-</div> */

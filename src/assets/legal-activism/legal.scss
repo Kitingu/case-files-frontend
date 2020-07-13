@@ -1,3 +1,9 @@
+.legal-naratives{
+  h2{
+    color: #402C71;
+    text-align: center;
+  }
+}
 .legal-boxes {
   display: flex;
   gap: 5px;
@@ -5,7 +11,7 @@
   justify-content: space-evenly;
   margin: auto;
   padding-top: 40px;
-  width: 80%;
+  width: 75%;
   @media screen and (max-width: 600px) {
     width: 100%;
   }
@@ -15,7 +21,7 @@
     position: relative;
     flex-direction: column;
     background-color: #7184A4;
-    width: 200px;
+    width: 220px;
     line-height: 8px;
     text-align: left;
     margin-bottom: 20px;
@@ -38,10 +44,19 @@
   }
 }
 .legal-body{
-    width: 80%;
+    width: 70%;
     margin: auto;
     text-align: justify;
+    p,h3{
+      padding-bottom: 16px;
+    }
     @media screen and (max-width:600px){
        width: 90%;
     }
+}
+.legal-main{ 
+  width: 70%;
+  p {
+  padding-bottom: 16px;
+}
 }

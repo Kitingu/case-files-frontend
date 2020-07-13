@@ -5,10 +5,12 @@ import Intro from "./Intro";
 import Login from "./Login";
 import Signup from "./Signup";
 import "../../assets/auth/common.scss";
-import Hero from "../layout/Hero";
+import justice from '../../images/hero-image.jpg';
+import Hero from "../../components/courts/CourtsHero";
 import Spinner from "../shared/Spinner";
 import Button from "./Button";
 import { NavLink } from "react-router-dom";
+import FooterLinks from '../layout/FooterLinks';
 
 const info = (header, inf, link, path) => (
   <>
@@ -18,27 +20,51 @@ const info = (header, inf, link, path) => (
   </>
 );
 const About = ({ login, signup, spinner }) => {
-  console.log("PPPPPPPPPPPPPP", login);
+
 
   return (
     <>
       <Spinner spinner={spinner} />
 
-      <Hero />
+      <Hero backgroundImage={justice} />
       <Intro />
-      <div className="join-network-container" style={{ flexDirection: signup ? "row-reverse" : "row" }}>
-        <div className="form" style={{ borderRadius: signup ? "0px 20px 20px 0px" : "20px 0px 0px 20px" }}>
+      <div
+        className="join-network-container"
+        style={{ flexDirection: signup ? 'row-reverse' : 'row' }}
+      >
+        <div
+          className="form"
+          style={{
+            borderRadius: signup ? '0px 20px 20px 0px' : '20px 0px 0px 20px',
+          }}
+        >
           {login && <Login />}
           {signup && <Signup />}
         </div>
-        <div className="info" style={{ borderRadius: signup ? "20px 0px 0px 20px" : "0px 20px 20px 0px" }}>
+        <div
+          className="info"
+          style={{
+            borderRadius: signup ? '20px 0px 0px 20px' : '0px 20px 20px 0px',
+          }}
+        >
           <div>
             {signup
-              ? info("Welcome Back", "To keep connected with us, please enter your personal info", "Sign In", "/login")
-              : info("Hello Friend!", "Enter your personal details to access the archives", "Sign Up", "/signup")}
+              ? info(
+                  'Welcome Back',
+                  'To keep connected with us, please enter your personal info',
+                  'Sign In',
+                  '/login'
+                )
+              : info(
+                  'Hello Friend!',
+                  'Enter your personal details to access the archives',
+                  'Sign Up',
+                  '/signup'
+                )}
           </div>
         </div>
       </div>
+      <FooterLinks color="primary-blue" />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Formik, Field, ErrorMessage } from 'formik';
 import { Form, FormGroup, Row, Col,FormLabel,Container } from 'react-bootstrap';
+import FooterLinks from '../layout/FooterLinks';
 // import TextInput from './textInput';
 
 import * as yup from 'yup';
@@ -70,8 +71,6 @@ class Signup extends Component {
 
     return (
       <>
-       
-        
         <Container>
           <Row className="mb-5">
             <Col className="col-lg-12 text-center">
@@ -117,132 +116,132 @@ class Signup extends Component {
                   handleSubmit,
                   isSubmitting,
                 }) => (
-                  <div style={{ marginTop: "100px" }}>
-                  <Spinner spinner={this.props.spinner} />
-                  <Form
-                    className="sign-up"
-                    style={{ display: 'flex', flexDirection: 'column' }}
-                    onSubmit={handleSubmit}
-                  >
-                    <FormGroup controlId="formBasicEmail">
-                      <Field
-                        type="text"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        name="firstname"
-                        value={values.firstname}
-                        placeholder="firstname"
-                        className={`form-control ${
-                          touched.firstname && errors.firstname
-                            ? 'is-invalid'
-                            : ''
-                        }`}
-                      />
-                      <ErrorMessage
-                        component="div"
-                        name="firstname"
-                        className="invalid-feedback"
-                      />
-                    </FormGroup>
+                  <div style={{ marginTop: '100px' }}>
+                    <Spinner spinner={this.props.spinner} />
+                    <Form
+                      className="sign-up"
+                      style={{ display: 'flex', flexDirection: 'column' }}
+                      onSubmit={handleSubmit}
+                    >
+                      <FormGroup controlId="formBasicEmail">
+                        <Field
+                          type="text"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="firstname"
+                          value={values.firstname}
+                          placeholder="firstname"
+                          className={`form-control ${
+                            touched.firstname && errors.firstname
+                              ? 'is-invalid'
+                              : ''
+                          }`}
+                        />
+                        <ErrorMessage
+                          component="div"
+                          name="firstname"
+                          className="invalid-feedback"
+                        />
+                      </FormGroup>
 
-                    <FormGroup>
-                      <input
-                        type="text"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        name="lastname"
-                        value={values.lastname}
-                        placeholder="lastname"
-                        className={`form-control ${
-                          touched.lastname && errors.lastname
-                            ? 'is-invalid'
-                            : ''
-                        }`}
-                      />
-                      <ErrorMessage
-                        component="div"
-                        name="lastname"
-                        className="invalid-feedback"
-                      />
-                    </FormGroup>
-                    <FormGroup>
-                      <input
-                        type="email"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        name="email"
-                        value={values.email}
-                        placeholder="email"
-                        className={`form-control ${
-                          touched.email && errors.email ? 'is-invalid' : ''
-                        }`}
-                      />
-                      <ErrorMessage
-                        component="div"
-                        name="email"
-                        className="invalid-feedback"
-                      />
-                    </FormGroup>
-                    <FormGroup>
-                      <input
-                        type="password"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        name="password"
-                        value={values.password}
-                        placeholder="password"
-                        className={`form-control ${
-                          touched.password && errors.password
-                            ? 'is-invalid'
-                            : ''
-                        }`}
-                      />
-                      <ErrorMessage
-                        component="div"
-                        name="password"
-                        className="invalid-feedback"
-                      />
-                    </FormGroup>
+                      <FormGroup>
+                        <input
+                          type="text"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="lastname"
+                          value={values.lastname}
+                          placeholder="lastname"
+                          className={`form-control ${
+                            touched.lastname && errors.lastname
+                              ? 'is-invalid'
+                              : ''
+                          }`}
+                        />
+                        <ErrorMessage
+                          component="div"
+                          name="lastname"
+                          className="invalid-feedback"
+                        />
+                      </FormGroup>
+                      <FormGroup>
+                        <input
+                          type="email"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="email"
+                          value={values.email}
+                          placeholder="email"
+                          className={`form-control ${
+                            touched.email && errors.email ? 'is-invalid' : ''
+                          }`}
+                        />
+                        <ErrorMessage
+                          component="div"
+                          name="email"
+                          className="invalid-feedback"
+                        />
+                      </FormGroup>
+                      <FormGroup>
+                        <input
+                          type="password"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="password"
+                          value={values.password}
+                          placeholder="password"
+                          className={`form-control ${
+                            touched.password && errors.password
+                              ? 'is-invalid'
+                              : ''
+                          }`}
+                        />
+                        <ErrorMessage
+                          component="div"
+                          name="password"
+                          className="invalid-feedback"
+                        />
+                      </FormGroup>
 
-                    <FormGroup>
-                      <input
-                        type="password"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        name="confirmPassword"
-                        value={values.confirmPassword}
-                        placeholder="confirm password"
-                        className={`form-control ${
-                          touched.confirmPassword && errors.confirmPassword
-                            ? 'is-invalid'
-                            : ''
-                        }`}
-                      />
-                      <ErrorMessage
-                        component="div"
-                        name="password"
-                        className="invalid-feedback"
-                      />
-                    </FormGroup>
+                      <FormGroup>
+                        <input
+                          type="password"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          name="confirmPassword"
+                          value={values.confirmPassword}
+                          placeholder="confirm password"
+                          className={`form-control ${
+                            touched.confirmPassword && errors.confirmPassword
+                              ? 'is-invalid'
+                              : ''
+                          }`}
+                        />
+                        <ErrorMessage
+                          component="div"
+                          name="password"
+                          className="invalid-feedback"
+                        />
+                      </FormGroup>
 
-                    <FormGroup>
-                      <input
-                        type="file"
-                        onChange={this.handleFile}
-                        name="document"
-                        placeholder="document"
-                      />
-                    </FormGroup>
-                    <FormGroup>
-                      <input
-                        type="submit"
-                        disabled={isSubmitting}
-                        value={isSubmitting ? 'Please wait...' : 'Submit'}
-                      />
-                    </FormGroup>
-                    <pre> {JSON.stringify(values, null, 2)} </pre>
-                    <pre> {JSON.stringify(errors, null, 2)} </pre>
-                  </Form>
+                      <FormGroup>
+                        <input
+                          type="file"
+                          onChange={this.handleFile}
+                          name="document"
+                          placeholder="document"
+                        />
+                      </FormGroup>
+                      <FormGroup>
+                        <input
+                          type="submit"
+                          disabled={isSubmitting}
+                          value={isSubmitting ? 'Please wait...' : 'Submit'}
+                        />
+                      </FormGroup>
+                      <pre> {JSON.stringify(values, null, 2)} </pre>
+                      <pre> {JSON.stringify(errors, null, 2)} </pre>
+                    </Form>
                   </div>
                 )}
               </Formik>

@@ -19,10 +19,19 @@ const About = ({ loginAction, error, spinner, auth }) => {
     <div className="intro-container">
       <h2>Join the Network</h2>
       <p>
-        KKKKKKKKKKK KKKKKKKKKK KKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKK KKKKKKKKKKK KKKKKKKKKKKKK KKKKKKKKKKKKK KKKKKKKKKKKK
-        KKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKK
-        KKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKKKKK
-        KKKKKKKKKKK KKKKKKKKKKKKKKKKKKKKKKKK KKKKKKKKKKKKKKKK
+        Lawyers, paralegals and citizen activists are struggling to improve the
+        justice system ‘from below’ against harsh odds. Too often their work
+        goes unrecognized and unsupported. Many of them work voluntarily, under
+        constant pressure or at great personal risk. We feature individual
+        stories of legal activism at the grassroots, illustrating innovative
+        efforts to promote access to justice and basic rights and to document
+        and reflect upon these initiatives. </p>
+        <p>The legal activists featured are
+        also in many cases researchers and network members. Their work has
+        informed international research projects and contributed to research
+        materials in the archive and on the site. Justice Networks serves as a
+        platform to highlight their concerns and to showcase their struggles and
+        achievements.
       </p>
     </div>
   );

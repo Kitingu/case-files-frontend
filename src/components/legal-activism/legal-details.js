@@ -16,13 +16,13 @@ const LegalDetails = () => {
   const currentPage = (current)=>{
     switch (current) {
       case 2:
-       return <CourtsHero backgroundImage={hero2} />
+       return <CourtsHero backgroundImage={hero4} />
 
        case 3:
        return <CourtsHero backgroundImage={justice} />
 
        case 4:
-       return <CourtsHero backgroundImage={hero4} />
+       return <CourtsHero backgroundImage={hero2} />
     
       default:
         return <CourtsHero backgroundImage={justice} />
@@ -33,7 +33,7 @@ const LegalDetails = () => {
     <>
     {currentPage(current)}
       <div className="jumbotron">
-        <div className="court-details">
+        <div className="court-details legal-main">
           <h3>Legal Activism</h3>
           <p>
             Lawyers, paralegals and citizen activists are struggling to improve
@@ -54,6 +54,7 @@ const LegalDetails = () => {
         </div>
       </div>
       <div className="legal-naratives">
+        <h2>Legal Activists narratives</h2>
         <div className="legal-boxes">
           {legalData.map((narrative) => (
             
