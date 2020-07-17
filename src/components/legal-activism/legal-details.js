@@ -34,7 +34,7 @@ const LegalDetails = () => {
     {currentPage(current)}
       <div className="jumbotron">
         <div className="court-details legal-main">
-          <h3>Legal Activism</h3>
+          <h3>Legal Activists</h3>
           <p>
             Lawyers, paralegals and citizen activists are struggling to improve
             the justice system ‘from below’ against harsh odds. Too often their

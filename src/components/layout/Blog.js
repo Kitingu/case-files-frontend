@@ -16,7 +16,7 @@ const CompanyDetails = () => {
             <p className="description"> 
             What do policymakers in the East and Horn of Africa need to know
             about justice, human rights, democracy peace and diversity? We
-            publish refletions from academic and practical experts.
+            publish reflections from academic and practical experts.
             </p>
           </div>
           <div className="blogs">

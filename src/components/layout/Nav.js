@@ -38,7 +38,7 @@ const Nav = () => {
             Courts
           </NavLink>
           <NavLink exact={true} to="/legal">
-            Legal Activism
+            Legal Activists
           </NavLink>
           <NavLink exact={true} to="/resources">
             resources
