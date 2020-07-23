@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { login } from "../../redux/actions/auth/login";
-import Spinner from "../shared/Spinner";
-import JoinNetwork from "../joinNetwork";
+import InputField from "./InputField";
+import Button from "./Button";
 
-const About = ({ loginAction, error, spinner, auth, match }) => {
+const About = ({ loginAction, error, spinner, auth }) => {
   const [loginData, setLoginData] = useState({});
   const handleLoginInputChange = (e) => {
     e.preventDefault();
@@ -16,7 +16,16 @@ const About = ({ loginAction, error, spinner, auth, match }) => {
     loginAction(loginData);
   };
 
-  return <JoinNetwork login={match.path === "/login"} />;
+  return (
+    <>
+      <form onSubmit={handleSubmitLoginData}>
+        <h2>Sign In</h2>
+        <InputField onChange={handleLoginInputChange} type="email" name="email" placeholder="email" />
+        <InputField onChange={handleLoginInputChange} type="password" name="password" placeholder="password" />
+        <Button type="submit" name="Submit" />
+      </form>
+    </>
+  );
 };
 export const mapStateToProps = ({ error, spinner, auth }) => ({
   error,

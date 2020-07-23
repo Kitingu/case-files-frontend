@@ -1,15 +1,10 @@
-import React from 'react';
-import Hero from '../layout/Hero';
-import FooterLinks from '../layout/FooterLinks';
-import Signup from '../signup/signup';
+import React from "react";
+import Hero from "../layout/Hero";
+import FooterLinks from "../layout/FooterLinks";
+import Signup from "../signup/signup";
+import JoinNetwork from "../joinNetwork";
 
-const SignUp = () => {
-  return (
-    <div>
-      <Hero />
-      <Signup />
-      <FooterLinks color="primary-blue" />
-    </div>
-  );
+const SignUp = ({ match }) => {
+  return <JoinNetwork signup={match.path === "/signup"} />;
 };
 export default SignUp;

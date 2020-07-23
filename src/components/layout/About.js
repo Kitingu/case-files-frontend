@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import placeholder from "../../images/placeholder.png";
+import placeholder2 from '../../images/placeholder2.png';
+import placeholder3 from '../../images/placeholder3.png';
 const CompanyDetails = () => {
   return (
     <>
@@ -25,16 +27,16 @@ const CompanyDetails = () => {
             </div>
           </div>
           <div className="box">
-            <img src={placeholder} alt="" />
+            <img src={placeholder2} alt="" />
             <div className="details">
-              <h5>Customary Court Report wau, South Sudan, 2015</h5>
+              <h5>Customary Court Report, Wau, South Sudan, 2015</h5>
               <Link to="#">
                 Read More <span>&#187;</span>
               </Link>
             </div>
           </div>
           <div className="box">
-            <img src={placeholder} alt="" />
+            <img src={placeholder3} alt="" />
             <div className="details">
               <h5>
                 Customary Court Report, Juba Protection of Civilians Site

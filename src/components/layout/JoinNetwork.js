@@ -23,7 +23,7 @@ const CompanyDetails = () => {
                 />
               </a>
               <h5>
-                DefendDefenders (2020) 'On the legal Frontline: Lawyers and
+                DefendDefenders (2020) 'On the Legal Frontline: Lawyers and
                 Paralegals as Human Rights Defenders in the East and Horn of
                 Africa'
               </h5>
