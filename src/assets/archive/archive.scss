@@ -1,0 +1,32 @@
+.archives{
+    display: flex;
+    flex-wrap: wrap;
+    // width:80%;
+    padding: 0 10%;
+    margin: auto;
+    background-color: #eee;
+
+    @media screen and (max-width:600px) {
+          flex-direction: column;
+          padding: 0 5%;
+    }
+  
+}
+.side-bar{
+    flex:1;
+    // min-width: 300px;
+    background-color: #7285A5;
+    list-style: none;
+    padding: 5px 15px;
+    color: #fff;
+}
+.main-content{
+    flex: 3;
+    margin:auto;
+    text-align: justify;
+    padding: 10px 30px;
+    
+}
+.legal-body{
+    color:#402C75;
+}

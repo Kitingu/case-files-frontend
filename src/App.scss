@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 750px;
+  width: 840px;
   margin: 0 auto;
   align-items: center;
 }
@@ -45,12 +45,12 @@ body {
 }
 .hero-about{
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(./images/service_4.jpeg);
+    url(./images/service_4.jpg);
     background-position: center;
 }
 .hero-courts{
 background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(./images/justice.jpeg);
+    url(./images/services.jpg);
 }
 .hero-text {
   text-align: center;
@@ -199,7 +199,7 @@ Media queries
     margin-bottom: 5px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 840px) {
   .topbar {
     flex-direction: row-reverse;
     align-items: center;

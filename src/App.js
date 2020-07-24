@@ -1,7 +1,7 @@
 import React from "react";
 import store from './redux/store/';
 import {Provider} from 'react-redux';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route,HashRouter, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -25,6 +25,8 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import SignUp from "./components/pages/SignUp";
 import axios from 'axios'
 import LegalActivism from "./components/pages/LegalActivism";
+import Archive from "./components/archive/archive";
+import Resources from "./components/pages/Resources";
 library.add(fab, faSearch, faArrowRight, faBars, faCaretUp,faFilePdf,faFileWord);
 
 const App = () => {
@@ -32,7 +34,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <div className="App">
-        <Router>
+        <Router history={HashRouter}>
           <>
             <Header />
             <Switch>
@@ -43,6 +45,8 @@ const App = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={SignUp} />
               <Route exact path="/legal" component={LegalActivism} />
+              <Route exact path="/resources" component={Resources} />
+              {/* <Route exact path="/archives" component={Archive} /> */}
             </Switch>
             <Footer />
           </>

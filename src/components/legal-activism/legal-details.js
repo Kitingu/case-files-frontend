@@ -4,7 +4,7 @@ import '../../assets/legal-activism/legal.scss';
 import legalData from './legal-narratives';
 import { Link } from 'react-router-dom';
 import CourtsHero from '../courts/CourtsHero';
-import justice from '../../images/justice.jpeg';
+import justice from '../../images/services.jpg';
 import hero2 from '../../images/activism-2.jpg';
 import hero4 from '../../images/activism-4.jpg';
 
@@ -59,7 +59,6 @@ const LegalDetails = () => {
           {legalData.map((narrative) => (
             
             <div className={`legal-box current-${narrative.id=== current}`}>
-              <h4>{narrative.header}</h4>
               <h4>{narrative.author} </h4>
               <Link
                 onClick={() => {

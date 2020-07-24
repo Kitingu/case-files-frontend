@@ -43,8 +43,11 @@ const Nav = () => {
           <NavLink exact={true} to="/resources">
             resources
           </NavLink>
-          <NavLink exact={true} to="/resources">
+          <NavLink exact={true} to="/blog">
             Blog
+          </NavLink>
+          <NavLink exact={true} to="/archives">
+            Archives
           </NavLink>
           <div className="search">
             <FontAwesomeIcon icon="search" className="nav-icon" />

@@ -3,7 +3,7 @@ import FooterLinks from "../layout/FooterLinks";
 import CourtsHero from "../courts/CourtsHero";
 import CourtDetails from "../courts/CourtDetails";
 import Cases from "../courts/Cases";
-import justice from '../../images/justice.jpeg';
+import justice from '../../images/services.jpg';
 
 const Courts = () => {
   return (

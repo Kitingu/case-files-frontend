@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import placeholder from '../../images/placeholder.png';
 import '../../assets/Blog.scss';
-import justice from '../../images/justice.jpeg';
-import democracy from '../../images/democracy.jpeg';
-import peace from '../../images/peace.jpeg';
+import justice from '../../images/services.jpg';
+import democracy from '../../images/democracy.jpg';
+import peace from '../../images/service_2.jpg';
 const CompanyDetails = () => {
   return (
     <>
