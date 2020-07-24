@@ -19,6 +19,8 @@
     list-style: none;
     padding: 5px 15px;
     color: #fff;
+    max-height: 600px;
+    margin-bottom: 30px;
 }
 .main-content{
     flex: 3;
@@ -29,4 +31,11 @@
 }
 .legal-body{
     color:#402C75;
+}
+.archive h3{
+    color:#7285A5;
+    
+}
+.active-true{
+    font-weight: bold;
 }

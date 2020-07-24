@@ -4,7 +4,6 @@ import '../../assets/resources/resources.scss';
 import { Link } from 'react-router-dom';
 import CourtsHero from '../courts/CourtsHero';
 import service3 from '../../images/service_3.jpeg';
-import namati from '../../images/namati.jpeg';
 
 const resourceData = [
   {
@@ -12,13 +11,13 @@ const resourceData = [
     type: 'Journal articles and reports',
     content: `<p> Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under United Nations governance: lessons from chiefs’ courts in South Sudan’s Protection of Civilians Sites. Stability: International Journal of Security and Development. 6(1) 16, pp. 1-17. 
 </p>
-<a class="resource-button" href='https://www.stabilityjournal.org/articles/10.5334/sta.568/'>Read More </a>
+<a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://www.stabilityjournal.org/articles/10.5334/sta.568/'>Read More </a>
 
 
 <p>
 Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under United Nations governance: lessons from chiefs’ courts in South Sudan’s Protection of Civilians Sites. Stability: International Journal of Security and Development. 6(1) 16, pp. 1-17. 
 </p>
-<a class="resource-button" href='https://www.stabilityjournal.org/articles/10.5334/sta.568/'>Read More </a>
+<a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://www.stabilityjournal.org/articles/10.5334/sta.568/'>Read More </a>
 
  `,
   },
@@ -30,7 +29,7 @@ Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under Unit
 
 
 
-<a class="resource-button" href='https://www.zedbooks.net/shop/book/south-sudans-injustice-system/'>Read More </a>
+<a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://www.zedbooks.net/shop/book/south-sudans-injustice-system/'>Read More </a>
 
  `,
   },
@@ -51,7 +50,7 @@ Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under Unit
     type: 'Blogs',
     content: `<p> Rachel Ibreck and Angelina Daniel Seeka, Rethinking humanitarian solidarity from the perspective of South Sudanese refugees facing discrimination and violence in Cairo </p>
 
-<a class="resource-button" href='https://blogs.lse.ac.uk/crp/2020/03/19/rethinking-humanitarian-solidarity-south-sudan-refugees-cairo-violence-in-cairo/'>Read More </a>
+<a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://blogs.lse.ac.uk/crp/2020/03/19/rethinking-humanitarian-solidarity-south-sudan-refugees-cairo-violence-in-cairo/'>Read More </a>
  `,
   },
   {
@@ -67,7 +66,7 @@ Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under Unit
     content: `<div>
    <p> <img src='http://justicenetworksea.org/namati.jpeg' alt="namati.org"> </img> </p>
     </hr>
-<a class="resource-button" class="resource-button" href='https://namati.org/'> Namati, Legal Empowerment Network </a>
+<a target="_blank" rel="noopener noreferrer" class="resource-button" class="resource-button" href='https://namati.org/'> Namati, Legal Empowerment Network </a>
 </div>
  `,
   },

@@ -22,12 +22,12 @@ const FooterLinks = (props) => {
              <span>Courts </span> {' '}
             </NavLink>
             <NavLink exact to="/legal">
-             <span>Legal Activitists </span> {' '}
+             <span>Legal Activists </span> {' '}
             </NavLink>
             <NavLink exact to="/resources">
              <span>Resources </span> {' '}
             </NavLink>
-            <NavLink exact to="/network">
+            <NavLink exact to="/signup">
              <span>Join the Network </span> {' '}
             </NavLink>
           </ul>

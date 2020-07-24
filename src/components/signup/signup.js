@@ -22,24 +22,6 @@ class Signup extends Component {
     };
     console.log(this.props)
   }
-  // handleChange = (e) => {
-  //   this.setState({
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const { firstname, lastname, email, password, document } = this.state;
-  //   const { props } = this;
-  //   let data = new FormData();
-  //   data.append('document', document);
-  //   data.append('firstName', firstname);
-  //   data.append('lastName', lastname);
-  //   data.append('email', email);
-  //   data.append('password', password);
-  //   props.addUser(data);
-  // };
   handleFile = (e) => {
     this.setState({
       document: e.target.files[0],

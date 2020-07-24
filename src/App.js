@@ -1,7 +1,7 @@
 import React from "react";
 import store from './redux/store/';
 import {Provider} from 'react-redux';
-import { BrowserRouter as Router, Route,HashRouter, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -25,16 +25,20 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import SignUp from "./components/pages/SignUp";
 import axios from 'axios'
 import LegalActivism from "./components/pages/LegalActivism";
-import Archive from "./components/archive/archive";
 import Resources from "./components/pages/Resources";
+import Archives from "./components/pages/Archives";
+import { storeToken } from "./utils/authHelper";
 library.add(fab, faSearch, faArrowRight, faBars, faCaretUp,faFilePdf,faFileWord);
 
+if (localStorage.token) {
+  storeToken(localStorage.token);
+}
 const App = () => {
   axios.defaults.baseURL = 'https://case-files.herokuapp.com/api/v1';
   return (
     <Provider store={store}>
       <div className="App">
-        <Router history={HashRouter}>
+        <Router>
           <>
             <Header />
             <Switch>
@@ -46,7 +50,7 @@ const App = () => {
               <Route exact path="/signup" component={SignUp} />
               <Route exact path="/legal" component={LegalActivism} />
               <Route exact path="/resources" component={Resources} />
-              {/* <Route exact path="/archives" component={Archive} /> */}
+              <Route exact path="/archives" component={Archives} />
             </Switch>
             <Footer />
           </>
