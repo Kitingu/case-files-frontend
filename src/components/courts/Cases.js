@@ -34,7 +34,7 @@ export default () => {
         data={data[head].cases}
         pageButtons={10}
         onePage={(court, index) => (
-          <div>
+          <div className="court">
             <h2>{court.title}</h2>
             <h4>{court.court}</h4>
             <p className="observer">Recorded by observer {court.observer}</p>

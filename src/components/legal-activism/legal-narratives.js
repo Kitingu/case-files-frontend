@@ -3,7 +3,7 @@ export default [
     id: 1,
     header: 'Legal Activist',
     author: 'ALira William',
-    content: `<h3>William: Promoting child rights in Kapoeta, South Sudan </h3>
+    content: `<h3 class="h3-black">William: Promoting child rights in Kapoeta, South Sudan </h3>
     <p>William sees it is vital to educate children and young people about their legal rights under statutory law. In October 2019, he used his paralegal training to support the work of Root of Generations (ROG) in Kapoeta, a South Sudanese NGO that focuses on empowering women and children in both urban and rural areas. Women and children are particularly vulnerable to injustice, with one of the key issues being around the customary tradition of arranged marriages in exchange for a bride price. In Kapoeta state, this has led to young girls (12–15 years) being married to significantly older men without the opportunity for education, or the knowledge of their right to be protected from early marriage under the 2008 Child Act.  
 </p>
 <p>William collaborated with ROG and the state Ministry of Information, Culture, Youth and Sport, to arrange a meeting on 19 October 2019 with a local youth group to discuss the challenges faced by young people and inform them of their legal rights under the 2008 Child Act. The outcomes and recommendations of this meeting were discussed by a youth representative on a community radio show in order to raise awareness throughout the community. The young people identified issues around forced marriage, sexual abuse, unemployment and land grabbing. William gave a presentation on the 2008 Child Act, informing those in attendance on their rights to be protected from early marriage and child abuse, as well as how to report instances of abuse. The meeting identified several recommendations including:  a continued need to raise awareness of children’s legal rights; the necessity for civil society to provide legal aid to young people; and the need for the government to economically empower young people to help combat unemployment.</p>
@@ -14,8 +14,8 @@ export default [
   {
     id: 2,
     header: 'Onyango',
-    author: 'Legal Activist Narrative',
-    content: `<h3> Onyango: Working to promote women’s rights in Nimule, South Sudan </h3>
+    author: 'Onyango',
+    content: `<h3 class="h3-black"> Onyango: Working to promote women’s rights in Nimule, South Sudan </h3>
     <p>Onyango is a trained paralegal who is committed to improving the rights of women in his community in Nimule including as regards property ownership and inheritance, the poor living standards women face in prison, and sexual assault cases. In October 2019, Onyango organised a meeting in a village in Nimule to discuss women's rights to property ownership and inheritance, along with a number of community activists; and with the assistance of a local chief. </p>
 
 <p>The rights of women in South Sudan were only recently enshrined in statutory law and in reality they continue to be systematically violated or undermined in many areas of life. The 2011 Constitution of South Sudan states in the Land Article 16(5) that women have a right to the estate of their deceased husbands along with any surviving heirs. However, the relatives of deceased husbands often deny women the right to their husbands’ inheritance and claim the property for themselves. The meeting discussed how women are perceived as being attached to their husbands, yet not part of the family in themselves. Participants also addressed the societal view that women do not contribute to the assets of a man's family, and therefore should not inherit their husband's property. By spreading awareness of women's constitutional right to inherit and own property and the ways that they can report breaches of this right, Onyango’s meeting helped to challenge these assumptions. He worked to empower women to assert their rights both by educating them in the law, and by involving a customary authority, knowing that in many localities chiefs’ courts routinely discriminate against women. </p>
@@ -28,10 +28,10 @@ export default [
   },
   {
     id: 3,
-    header: 'Okeny Legal',
-    author: 'activist write up',
+    header: 'Okeny',
+    author: 'Okeny',
     content: `
-    <h3>Okeny: Promoting legal empowerment at community level in Torit, South Sudan </h3>
+    <h3 class="h3-black">Okeny: Promoting legal empowerment at community level in Torit, South Sudan </h3>
     <p>Okeny is concerned about access to justice in his community in Torit. In December 2019, he organised a community meeting  to improve understanding of the justice system and discuss some of the challenges that face it. Participants reflected on their experiences and discussed recommendations for improving the justice system, particularly focusing on customary courts.</p>
 <p>South Sudan's judicial system has changed throughout the periods of conflict and is often only accessible through customary courts. As a legal activist and court observer, Okeny outlined the distinction between customary courts and statutory courts and the types of cases each court hears. This included a discussion on the legal rights in a court, and those outlined in South Sudan’s Bill of Rights, which was enshrined in statutory law as part of the provisional constitution in 2011. This was aimed at giving attendees a better working understanding of the provision of law. </p>
 <p>The meeting discussed some of the issues within the customary court system that undermine the process of justice. A widespread problem in South Sudan is the weakening of the authority of community leaders when court rulings are ignored by armed men or subverted by corruption. The lack of a functioning police force often exacerbates this issue, making it difficult for customary courts to enforce their rulings if they are not supported by a specific part of the community. Additionally, concerns over nepotism were expressed in the meeting, saying that chiefs who rule in favour of relatives or friends can lead to divides in the community and even to violence.</p>
@@ -41,8 +41,8 @@ export default [
   {
     id: 4,
     header: 'Tot, Nhial',
-    author: 'and Peter',
-    content: `<h3>Tot, Nhial and Peter: Working together to empower forcibly displaced young people in in South Sudan</h3>
+    author: 'Tot, Nhial and Peter',
+    content: `<h3 class="h3-black">Tot, Nhial and Peter: Working together to empower forcibly displaced young people in in South Sudan</h3>
     <p>A group of three activists, Tot, Nhial and Peter, who were forced out of their homes by massacres in December 2013, are concerned about the rights of other displaced young people in their camp. They used their paralegal training and creative talents to organise an awareness-raising activity for young people living in the United Nations Mission in South Sudan (UNMISS) Protection of Civilians (PoC3) site on 28 January 2020. They informed participants about their rights in relation to two prevalent problems affecting them: forced underage marriages, and a lack of access to education. They wanted young people in the PoC to understand the laws surrounding these issues, and some of the ways they could seek assistance in dealing with them, either through the justice system, or NGOs. </p>
 <p>Young people, especially girls, are at significant risk of being forced into marriages by their parents. This can often occur when the child is legally underage. In 2017, South Sudan had the 7th highest rate of child marriages in the world; with 52% of children married by 18 and 9% of children married by 15. Underage marriages are illegal according to the 2008 Child Act which protects the rights of children under statutory law. These marriages often happen because parents stand to gain financially from marrying off their daughters for a bride price, and customary law states that children are the property of their parents.</p>
 <p>Tot, Nhial and Peter explained to the young people at the meeting that underage marriages result in psychological damage, abuse, and in some cases suicide. They used drama to explore this issue, getting the young people to act out stories of forced marriages and the dynamics surrounding them. They advised the attendees on how to report a forced marriage to the authorities, and get the case referred to a court. They also gave advice on how to reach out to relatives and community figures for assistance in situations where legal alternatives are not possible.</p>

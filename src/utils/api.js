@@ -2,8 +2,8 @@ import axios from "axios";
 import { getToken } from "./authHelper";
 
 const apiCall = axios.create({
-  baseURL: `https://case-files.herokuapp.com/api/v1/`,
-  timeout: "8000ms",
+  baseURL: `http://app.justicenetworksea.org/api/v1/`,
+  timeout: '8000ms',
 });
 
 apiCall.interceptors.request.use((config) => {

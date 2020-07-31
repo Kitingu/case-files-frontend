@@ -25,8 +25,14 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import SignUp from "./components/pages/SignUp";
 import axios from 'axios'
 import LegalActivism from "./components/pages/LegalActivism";
+import Resources from "./components/pages/Resources";
+import Archives from "./components/pages/Archives";
+import { storeToken } from "./utils/authHelper";
 library.add(fab, faSearch, faArrowRight, faBars, faCaretUp,faFilePdf,faFileWord);
 
+if (localStorage.token) {
+  storeToken(localStorage.token);
+}
 const App = () => {
   axios.defaults.baseURL = 'https://case-files.herokuapp.com/api/v1';
   return (
@@ -43,6 +49,8 @@ const App = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={SignUp} />
               <Route exact path="/legal" component={LegalActivism} />
+              <Route exact path="/resources" component={Resources} />
+              <Route exact path="/archives" component={Archives} />
             </Switch>
             <Footer />
           </>

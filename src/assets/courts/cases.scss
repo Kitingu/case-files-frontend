@@ -33,7 +33,23 @@
       }
     }
   }
-  .pagination-container {
+  
+}
+.download-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  button {
+    margin-bottom: 5px;
+  }
+}
+.observer {
+  font-style: italic;
+  font-weight: 600;
+}
+.court{
+  padding-bottom: 30px;
+}
+.pagination-container {
     > div {
       > h2 {
         color: $primary-blue;
@@ -104,15 +120,3 @@
       }
     }
   }
-}
-.download-buttons {
-  display: inline-flex;
-  flex-wrap: wrap;
-  button {
-    margin-bottom: 5px;
-  }
-}
-.observer {
-  font-style: italic;
-  font-weight: 600;
-}
