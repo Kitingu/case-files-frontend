@@ -4,6 +4,7 @@ import {Provider} from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import PrivateRoute from './components/protectedRoute';
 import {
   faSearch,
   faArrowRight,
@@ -50,7 +51,7 @@ const App = () => {
               <Route exact path="/signup" component={SignUp} />
               <Route exact path="/legal" component={LegalActivism} />
               <Route exact path="/resources" component={Resources} />
-              <Route exact path="/archives" component={Archives} />
+              <PrivateRoute exact path="/archives" component={Archives} />
             </Switch>
             <Footer />
           </>
