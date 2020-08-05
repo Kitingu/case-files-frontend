@@ -14,7 +14,7 @@ export const login = (data) => async (dispatch) => {
     });
     setSpinner(false, dispatch);
   } catch (error) {
-    setError(error, dispatch);
+    setError(error.response, dispatch);
     setSpinner(false, dispatch);
   }
 };

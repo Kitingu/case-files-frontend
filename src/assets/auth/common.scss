@@ -72,8 +72,17 @@
         margin: 10px auto;
         outline: none;
         background-color: #fff;
-         font-weight: 300;
-         font-family: 'Arial', sans-serif;
+        font-weight: 300;
+        font-family: 'Arial', sans-serif;
+        &.input-form:focus {
+          background-color: #e8fcff;
+        }
+        &.input-error {
+          background-color: #fdd6db;
+          &:focus {
+            background-color: #fdd6db;
+          }
+        }
       }
       label {
         border: none;
@@ -98,6 +107,7 @@
         color: #fff;
         padding: 10px 15px;
         border-radius: 7px;
+        cursor: pointer;
       }
       > p {
         margin: 0;
@@ -136,4 +146,9 @@
       }
     }
   }
+}
+
+.invalid-feedback {
+  color: #f579c1;
+  margin-left: 10px;
 }

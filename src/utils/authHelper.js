@@ -1,13 +1,12 @@
-import jwt from "jsonwebtoken";
+// import jwt from "jsonwebtoken";
+import JWTDecode from 'jwt-decode';
 
-export const decodeToken = (token) =>
-  jwt.verify(token, process.env.JWT_KEY, (err, decoded) => {
-    if (err) {
-      return false;
-    }
+export const decodeToken = (token) =>{
+  const decoded = JWTDecode(token);
+    console.log(decoded)
     localStorage.setItem("justiceNetwork_user_data", JSON.stringify(decoded));
     return decoded;
-  });
+  };
 
 export const storeToken = (token) => {
   localStorage.setItem("auth_access_token", token);

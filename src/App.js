@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from 'react-toastify';
 import store from './redux/store/';
 import {Provider} from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -22,6 +23,7 @@ import Home from "./components/pages/Home";
 import Courts from "./components/pages/courts";
 import Login from "./components/pages/Login";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 import SignUp from "./components/pages/SignUp";
 import axios from 'axios'
@@ -42,6 +44,7 @@ const App = () => {
         <Router>
           <>
             <Header />
+            <ToastContainer />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
