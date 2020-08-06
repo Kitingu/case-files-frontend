@@ -42,6 +42,9 @@
       margin: auto;
       flex-direction: row;
       justify-content: space-between;
+      h1{
+        color: rgb(74, 86, 119);
+      }
       @media screen and (min-width: 200px) and (max-width: 800px) {
         width: 80%;
         flex-direction: column;

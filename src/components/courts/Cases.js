@@ -42,7 +42,7 @@ export default () => {
             <p>{court.summary}</p>
             {contentHead === court.id && (
               <>
-                <h3>Comment</h3>
+                <h4>Comment</h4>
                 <p> {court.comment}</p>
               </>
             )}

@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "./authHelper";
 
 const apiCall = axios.create({
-  baseURL: `http://app.justicenetworksea.org/api/v1/`,
+  baseURL: `https://app.justicenetworksea.org/api/v1/`,
   timeout: '8000ms',
 });
 

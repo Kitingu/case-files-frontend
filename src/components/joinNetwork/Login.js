@@ -52,9 +52,9 @@ const About = ({ loginAction, error, spinner, auth }) => {
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Sign In</h2>
-        <InputField register={register} className={`input-form ${errors.email && 'input-error'}`} type="email" name="email" placeholder="email" />
+        <InputField register={register} className={`input-form ${errors.email && 'input-error'}`} type="email" name="email" placeholder="Email" />
         <p className="invalid-feedback">{errors.email && errors.email.message}</p>
-        <InputField register={register} className={`input-form ${errors.password && 'input-error'}`} type="password" name="password" placeholder="password" />
+        <InputField register={register} className={`input-form ${errors.password && 'input-error'}`} type="password" name="password" placeholder="Password" />
         <p className="invalid-feedback">{errors.password && errors.password.message}</p>
         <Button type="submit" name="Submit" />
       </form>

@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     header: 'Legal Activist',
-    author: 'ALira William',
+    author: 'William',
     content: `<h3 class="h3-black">William: Promoting child rights in Kapoeta, South Sudan </h3>
     <p>William sees it is vital to educate children and young people about their legal rights under statutory law. In October 2019, he used his paralegal training to support the work of Root of Generations (ROG) in Kapoeta, a South Sudanese NGO that focuses on empowering women and children in both urban and rural areas. Women and children are particularly vulnerable to injustice, with one of the key issues being around the customary tradition of arranged marriages in exchange for a bride price. In Kapoeta state, this has led to young girls (12–15 years) being married to significantly older men without the opportunity for education, or the knowledge of their right to be protected from early marriage under the 2008 Child Act.  
 </p>

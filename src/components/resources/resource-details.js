@@ -9,16 +9,18 @@ const resourceData = [
   {
     id: 1,
     type: 'Journal articles and reports',
-    content: `<p> Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under United Nations governance: lessons from chiefs’ courts in South Sudan’s Protection of Civilians Sites. Stability: International Journal of Security and Development. 6(1) 16, pp. 1-17. 
-</p>
-<a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://www.stabilityjournal.org/articles/10.5334/sta.568/'>Read More </a>
-
-
+    content: `
+    <div class="resource-div">
 <p>
 Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under United Nations governance: lessons from chiefs’ courts in South Sudan’s Protection of Civilians Sites. Stability: International Journal of Security and Development. 6(1) 16, pp. 1-17. 
 </p>
 <a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://www.stabilityjournal.org/articles/10.5334/sta.568/'>Read More </a>
-
+</div>
+<div class="resource-div">
+<p>Rachel Ibreck, Hannah Logan, and Naomi Pendle, 2017. Negotiating Justice: Courts as local civil authority during the conflict in South Sudan, LSE.
+</p>
+<a target="_blank" rel="noopener noreferrer" class="resource-button" href='https://research.gold.ac/.uk/211141/17-0048-Sudan-Report-v9.Web.pdf'>Read More </a>
+</div>
  `,
   },
 
@@ -57,12 +59,14 @@ Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under Unit
     id: 5,
     type: 'Podcasts',
     content: `<div>
+   <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/david-meffe/justice-networks-in-the-horn-of-africa-legal-networking-in-war-torn-south-sudan&show_comments=true&show_user=true&show_reposts=false"></iframe>
+    </hr>
 </div>
  `,
   },
   {
     id: 6,
-    type: 'Websites',
+    type: 'Weblinks',
     content: `<div>
    <p> <img src='http://justicenetworksea.org/namati.jpeg' alt="namati.org"> </img> </p>
     </hr>
@@ -94,8 +98,12 @@ const ResourceDetails = () => {
       </div>
 
       <div className="legal-boxes small-box">
-        {resourceData.map((resource) => (
-          <div className={`legal-box current-${resource.id === current}`}>
+        {resourceData.map((resource ) => (
+          <div key={resource.id}
+            className={`resource-box current-${
+              resource.id === current
+            }`}
+          >
             <Link
               onClick={() => {
                 setCurrent(resource.id);

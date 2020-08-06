@@ -12,7 +12,7 @@ import axios from 'axios';
     try {
       setSpinner(true, dispatch);
       const res = await axios.post(
-        'http://app.justicenetworksea.org/api/v1/auth/register',
+        'https://app.justicenetworksea.org/api/v1/auth/register',
         formData,
         config
       );

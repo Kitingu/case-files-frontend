@@ -19,19 +19,27 @@ const About = ({ loginAction, error, spinner, auth }) => {
     <div className="intro-container">
       <h2>Join the Network</h2>
       <p>
-        Lawyers, paralegals and citizen activists are struggling to improve the
-        justice system ‘from below’ against harsh odds. Too often their work
-        goes unrecognized and unsupported. Many of them work voluntarily, under
-        constant pressure or at great personal risk. We feature individual
-        stories of legal activism at the grassroots, illustrating innovative
-        efforts to promote access to justice and basic rights and to document
-        and reflect upon these initiatives. </p>
-        <p>The legal activists featured are
-        also in many cases researchers and network members. Their work has
-        informed international research projects and contributed to research
-        materials in the archive and on the site. Justice Networks serves as a
-        platform to highlight their concerns and to showcase their struggles and
-        achievements.
+        We aim to share knowledge, make connections and strengthen research
+        networks for justice, human rights, democracy and peace across Eastern
+        Africa, building on our recent experiences in South Sudan. Networks
+        produce forms of power or ‘social capital’, enabling individuals and
+        groups to advance their interests and agendas. Lawyers, paralegals,
+        civil society and community activists, working to document and combat
+        injustices at the grassroots can establish new connections and share and
+        use resources. Academic researchers and students in Eastern Africa can
+        also both provide and access primary data, to further knowledge-sharing
+        and dialogue in the region.{' '}
+      </p>
+      <p>
+        To join our network, you need to demonstrate your existing commitment to
+        working for justice, human rights, democracy or peace in Eastern Africa,
+        either as a scholar or practitioner. Joining the network connects you to
+        other justice activists and allows you access to our primary data. We
+        require your name, an affiliation to an educational institution, a
+        research initiative, a civil society or community-based organisation or
+        network to ensure that the information is being used for its intended
+        purposes: to promote research, knowledge and action towards justice in
+        the region.
       </p>
     </div>
   );

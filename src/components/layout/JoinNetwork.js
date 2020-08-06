@@ -3,6 +3,7 @@ import React from "react";
 // import placeholder from "../../images/placeholder.png";
 import "../../assets/JoinNetwork.scss";
 import publications from "../../images/publications.jpg";
+import { Link } from "react-router-dom";
 const CompanyDetails = () => {
   return (
     <>
@@ -36,18 +37,22 @@ const CompanyDetails = () => {
               </a>
             </div>
           </div>
-          <form className="joinNetworkDiv">
+          <form className="joinNetworkDiv" action="/signup">
             <div>
               <h1>Join the network</h1>
               <p>
                 Lets share knowledge, make connections and strengthen networks
-                for justice in south sudan and across Eastern Africa.
+                for justice in South Sudan and across Eastern Africa.
               </p>
               <input type="text" placeholder="Full name" />
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <input type="password" placeholder="Confirm password" />
-              <input className="submitBtn " type="submit" value="Submit" />
+              <input
+                className="submitBtn "
+                type="submit"
+                value="Submit"
+              />
             </div>
           </form>
         </div>

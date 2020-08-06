@@ -8,7 +8,7 @@ import next from '../../images/next.png';
 const data = [
   {
     header:
-      ' <a href= "https://namati.org"> Provide insights from research into the law inpractice </a>',
+      'Provide insights from research into the law in practice',
     content:
       '<span> in conflict and crisis settings in Eastern Africa, where most people only have access to local courts; and where customary or religious laws and authorities often command legitimacy. Our research demonstrates that efforts to deliver and promote ‘law from below’ continue despite conflict and ‘fragility.’ Documenting court proceedings can enrich our understanding of law, politics and society; it can also enable legal empowerment public scrutiny, and social accountability across the region.</span>',
   },
@@ -30,7 +30,7 @@ const data = [
   },
   {
     header:
-      '<a href="https://www.participatorymethods.org/task/research-and-analyse"> Connect activists to researchers and encourage participatory action research </a>',
+      'Connect activists to researchers and encourage participatory action research',
     content:
       'as a viable and ethical method of contributing to academic knowledge.',
   },

@@ -11,27 +11,15 @@ export default () => {
     <>
       <div className="aboutPatnersContainer">
         <h1>Find out about our research patners</h1>
-        <div className="patners">
+        <div className="about-partners">
           <div>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.gold.ac.uk/politics-and-international-relations"
+              href="https://justiceafrica"
             >
               <img src={partner1} className="partners-image" alt="" />
-              <p>
-                Goldsmith department of politics and international relationships
-              </p>{' '}
-            </a>
-          </div>
-          <div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://justiceafrica.org"
-            >
-              <img src={partner2} className="partners-image" alt="" />{' '}
-              <p>Justice Africa</p>{' '}
+              <p></p>{' '}
             </a>
           </div>
           <div>
@@ -40,8 +28,16 @@ export default () => {
               rel="noopener noreferrer"
               href="http://www.lse.ac.uk/international-development/conflict-and-civil-society/conflict-research-programme"
             >
+              <img src={partner2} className="partners-image" alt="" />{' '}
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://defenddefenders.org"
+            >
               <img src={partner3} className="partners-image" alt="" />
-              <p>Conflict research programme</p>
             </a>
           </div>
           <div>
@@ -51,27 +47,24 @@ export default () => {
               href="https://namati.org/network/organization/south-sudan-law-society-ssls"
             >
               <img src={partner4} className="partners-image" alt="" />
-              <p>South sudan law society</p>{' '}
             </a>
           </div>
           <div>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="http://cepo-southsudan.org/about"
+              href="http://www.gold.ac.uk/politics-and-international-relationscepo-southsudan.org/about"
             >
               <img src={partner5} className="partners-image" alt="" />
-              <p>Community empowerment for progress organization</p>
             </a>
           </div>
           <div>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://defenddefenders.org/"
+              href="https://cepo-southsudan.org/about/"
             >
               <img src={partner6} className="partners-image" alt="" />
-              <p>Defend defenders</p>
             </a>
           </div>
         </div>

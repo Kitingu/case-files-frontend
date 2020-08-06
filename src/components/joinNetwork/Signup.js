@@ -103,7 +103,7 @@ const About = ({ loginAction, error, spinner, auth, signupAction }) => {
         <div>{errors.document && errors.document.message}</div>
          <h4>The following evidence are acceptable. Either:</h4>
         <p>1. A photo of a card showing your affiliation to relevant institution or association</p>
-        <p>2. A photo of a national ID card and a copy of a statement of your research claims</p>
+        <p>2. A photo of a national ID card and a copy of a statement of your research questions’</p>
         <Button type="submit" name="Submit" />
        
       </form>
