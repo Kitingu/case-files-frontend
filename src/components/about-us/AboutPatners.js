@@ -10,13 +10,13 @@ export default () => {
   return (
     <>
       <div className="aboutPatnersContainer">
-        <h1>Find out about our research patners</h1>
+        <h1>Find out about our research partners</h1>
         <div className="about-partners">
           <div>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://justiceafrica"
+              href="https://justiceafrica.org"
             >
               <img src={partner1} className="partners-image" alt="" />
               <p></p>{' '}
@@ -53,7 +53,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="http://www.gold.ac.uk/politics-and-international-relationscepo-southsudan.org/about"
+              href="https://www.gold.ac.uk/politics-and-international-relations/"
             >
               <img src={partner5} className="partners-image" alt="" />
             </a>
@@ -62,7 +62,7 @@ export default () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://cepo-southsudan.org/about/"
+              href="http://cepo-southsudan.org/"
             >
               <img src={partner6} className="partners-image" alt="" />
             </a>
