@@ -35,7 +35,7 @@ body {
 
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(./images/cartoon_hero1.jpeg);
+    url(./images/Home.png);
   height: 80vh;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -45,12 +45,12 @@ body {
 }
 .hero-about{
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(./images/service_2.jpg);
+    url(./images/About_us.png);
     background-position: center;
 }
 .hero-courts{
 background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(./images/service_4.jpg);
+    url(./images/Courts.png);
 }
 .hero-text {
   text-align: center;

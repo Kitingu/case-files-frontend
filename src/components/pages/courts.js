@@ -3,12 +3,12 @@ import FooterLinks from "../layout/FooterLinks";
 import CourtsHero from "../courts/CourtsHero";
 import CourtDetails from "../courts/CourtDetails";
 import Cases from "../courts/Cases";
-import justice from '../../images/service_4.jpg';
+import courtsHeroImage from '../../images/Courts.png';
 
 const Courts = () => {
   return (
     <div>
-      <CourtsHero backgroundImage={justice} />
+      <CourtsHero backgroundImage={courtsHeroImage} />
       <CourtDetails />
       <Cases />
       <FooterLinks color="primary-blue" />

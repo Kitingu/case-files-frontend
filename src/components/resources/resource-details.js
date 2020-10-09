@@ -3,7 +3,7 @@ import ReactHtmlParser, { convertNodeToElement } from 'react-html-parser';
 import '../../assets/resources/resources.scss';
 import { Link } from 'react-router-dom';
 import CourtsHero from '../courts/CourtsHero';
-import service3 from '../../images/service_3.jpeg';
+import ResourceHero from '../../images/cartoon_hero1.jpeg';
 
 const resourceData = [
   {
@@ -80,7 +80,7 @@ const ResourceDetails = () => {
 
   return (
     <>
-      <CourtsHero backgroundImage={service3} />
+      <CourtsHero backgroundImage={ResourceHero} />
       <div className="jumbotron">
         <div className="court-details">
           <h3>Resources</h3>

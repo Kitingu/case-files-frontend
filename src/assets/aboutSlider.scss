@@ -31,14 +31,13 @@
      color:$primary-blue;
      font-weight: bolder;
      text-decoration: none;
-     font-size: 18px;
      
     }
 
     .slide {
       color:$primary-blue;
       .slider-heading{
-        font-weight: bolder;
+        font-weight: bold;
       }
      div{
        display: inline;
@@ -48,6 +47,7 @@
       margin: 5px 10px;
       background: $background-grey;
       padding: 10px;
+      text-align: justify;
     }
   }
 }
@@ -55,6 +55,7 @@
 .read-more-less--more,
 .read-more-less--less {
   font-weight: bold;
+  font-size: 14px;
 }
 @media screen and (max-width: 600px) {
 }

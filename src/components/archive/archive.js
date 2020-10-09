@@ -6,7 +6,7 @@ import next from '../../images/next.png';
 import '../../assets/archive/archive.scss';
 import '../../assets/courts/cases.scss';
 import CourtsHero from '../courts/CourtsHero';
-import heroImage from '../../images/war.jpg';
+import ArchivesHero from '../../images/Archives.png';
 import archivesData from './data';
 import axios from 'axios';
 import data from '../courts/data';
@@ -46,7 +46,7 @@ const Archive = () => {
 
   return (
     <>
-      <CourtsHero backgroundImage={heroImage} />
+      <CourtsHero backgroundImage={ArchivesHero} />
       <div className="jumbotron archives">
         <div className="side-bar">
           <h3>Legal Activists</h3>

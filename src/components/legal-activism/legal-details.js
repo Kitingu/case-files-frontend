@@ -4,7 +4,7 @@ import '../../assets/legal-activism/legal.scss';
 import legalData from './legal-narratives';
 import { Link } from 'react-router-dom';
 import CourtsHero from '../courts/CourtsHero';
-import justice from '../../images/services.jpg';
+import legalActivismHero from '../../images/Legal_Activists.png';
 import hero2 from '../../images/activism-2.jpg';
 import hero4 from '../../images/activism-4.jpg';
 
@@ -16,16 +16,16 @@ const LegalDetails = () => {
   const currentPage = (current)=>{
     switch (current) {
       case 2:
-       return <CourtsHero backgroundImage={hero4} />
+       return <CourtsHero backgroundImage={legalActivismHero} />;
 
        case 3:
-       return <CourtsHero backgroundImage={justice} />
+       return <CourtsHero backgroundImage={legalActivismHero} />;
 
        case 4:
-       return <CourtsHero backgroundImage={hero2} />
+       return <CourtsHero backgroundImage={legalActivismHero} />;
     
       default:
-        return <CourtsHero backgroundImage={justice} />
+        return <CourtsHero backgroundImage={legalActivismHero} />;
     }
   }
 

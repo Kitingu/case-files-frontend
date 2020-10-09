@@ -82,7 +82,7 @@ export default () => {
         {slideData.map((slide) => (
           <div key={slide.header} className="slide">
             <span className="slider-heading"> {ReactHtmlParser(slide.header)} </span>
-            <ShowMoreText width={450} more="Read more" less="read less">
+            <ShowMoreText width={450} more="Read more" less="Read less">
               {ReactHtmlParser(slide.content)}
             </ShowMoreText>
           </div>
