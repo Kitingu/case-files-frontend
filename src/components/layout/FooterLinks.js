@@ -19,16 +19,19 @@ const FooterLinks = (props) => {
               <span>About us</span>{' '}
             </NavLink>
             <NavLink exact to="/courts">
-             <span>Courts </span> {' '}
+              <span>Courts </span>{' '}
             </NavLink>
             <NavLink exact to="/legal">
-             <span>Legal Activists </span> {' '}
+              <span>Legal Activists </span>{' '}
             </NavLink>
             <NavLink exact to="/resources">
-             <span>Resources </span> {' '}
+              <span>Resources </span>{' '}
             </NavLink>
             <NavLink exact to="/signup">
-             <span>Join the Network </span> {' '}
+              <span>Join the Network </span>{' '}
+            </NavLink>
+            <NavLink exact to="/blog">
+              <span>Blog </span>{' '}
             </NavLink>
           </ul>
         </div>
