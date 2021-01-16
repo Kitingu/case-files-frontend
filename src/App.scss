@@ -37,20 +37,23 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(./images/Home.png);
   height: 80vh;
-  background-position: center !important;
+  background-position: bottom !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   // z-index: -1;
   position: relative;
 }
-.hero-about{
+.hero-about {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(./images/About_us.png);
-    background-position: center;
+  background-position: center;
 }
-.hero-courts{
-background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+.hero-courts {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(./images/Courts.png);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 .hero-text {
   text-align: center;
@@ -80,9 +83,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  
-  a{
-    padding:10px 8px;
+
+  a {
+    padding: 10px 8px;
     color: #fff;
     text-decoration: none;
     position: relative;
@@ -153,7 +156,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
   border-radius: 5px;
   font-size: 0.9rem;
   padding: 10px;
-  .box-content{
+  .box-content {
     font-size: 12px;
     position: relative;
     text-align: justify;
@@ -190,18 +193,18 @@ footer {
   word-wrap: break-word;
   text-align: center;
 }
-.primary-blue{
-   background-color: #7285a5;
+.primary-blue {
+  background-color: #7285a5;
 }
-.default{
-    background-color: #eee;
+.default {
+  background-color: #eee;
 }
 /* 
 Media queries
 */
 @media screen and (max-width: 360px) {
-  .hero-image{
-    height:300px;
+  .hero-image {
+    height: 300px;
   }
   .hero-text {
     position: relative;
@@ -230,8 +233,8 @@ Media queries
   .logo {
     float: right !important;
   }
-  .hero-image{
-    height:400px;
+  .hero-image {
+    height: 400px;
   }
   .hero-text {
     position: relative;
@@ -239,8 +242,8 @@ Media queries
     margin: auto;
   }
 }
-@media screen and (max-width:680px){
-   .hero-text h2 {
+@media screen and (max-width: 680px) {
+  .hero-text h2 {
     padding-top: 0;
     font-size: 1.5rem;
   }
@@ -251,7 +254,7 @@ Media queries
     position: relative;
     padding-top: 2rem;
   }
-  .details{
+  .details {
     width: 230px;
   }
   .box {
@@ -268,8 +271,8 @@ Media queries
   }
 }
 @media screen and (max-width: 890px) {
-  .hero-image{
-    height:500px;
+  .hero-image {
+    height: 500px;
   }
   .hero-text h2 {
     font-size: 1.8rem;
@@ -296,9 +299,9 @@ Media queries
   }
 }
 
-.sign-up{
+.sign-up {
   text-align: center;
-  display:flex;
+  display: flex;
   align-items: center;
   min-width: 500px;
 }
@@ -306,7 +309,7 @@ Media queries
   border-radius: 20%;
   border-color: #9f3a38;
 }
-.invalid-feedback{
-  color:red;
-  font-size:12px;
+.invalid-feedback {
+  color: red;
+  font-size: 12px;
 }

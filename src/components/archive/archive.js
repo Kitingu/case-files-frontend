@@ -29,7 +29,7 @@ const config = {
 };
 const getData = async () => {
   const response = await axios.get(
-    'http://app.justicenetworksea.org/api/v1/cases',
+    'https://app.justicenetworksea.org/api/v1/cases',
     config
   );
 
