@@ -1,13 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext,useEffect } from 'react';
 import UserContext from '../../context/user/userContext';
 import { Link } from 'react-router-dom';
+import '../../styles/styles.scss'
 import Iframe from 'react-iframe';
+import BlogContext from '../../context/blog/blogContext';
 
 
  const Vlog = ({blogs}) => {
   const userContext = useContext(UserContext);
-  const { setUser, users, setUserBlogs } = userContext;
-    let vlog;
+  const blogContext = useContext(BlogContext)
+  const {searchBlogs}=blogContext;
+
+  const { setUser, users, setUserBlogs, searchUsers } = userContext;
+
+   useEffect(() => {
+     searchBlogs();
+     searchUsers();
+   }, []);
+  const newblok = blogs.filter(blok=> blok.id === 52)
+  console.log('fdsaa',newblok)
+  console.log('asdf',blogs)
+
   return (
     <div>
       <div className="vlog">
@@ -19,29 +32,14 @@ import Iframe from 'react-iframe';
           frameBorder="0"
         ></Iframe>
         
-        {/* <div className="vlog-details">
-          <p>{vlog[0].x_categories}</p>
-          <p>
-            {new Date(vlog[0].date).toLocaleString('en-GB', {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric',
-            })}{' '}
-            |{' '}
-            <Link
-              className="author"
-              to={`/author/${vlog[0].author}`}
-              onClick={() => {
-                const user = users.filter((data) => data.id === vlog[0].author);
+        <div className="vlog-details">
+          <p className="vlog-category">Peace</p>
+          
+          <div>
+            <p className="vlog-author">Rosebell</p> 
 
-                setUser(user[0]);
-                setUserBlogs(user[0], blogs);
-              }}
-            >
-              {vlog[0].x_author}
-            </Link>
-          </p>
-        </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );

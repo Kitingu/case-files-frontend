@@ -2,16 +2,21 @@ import React, { useContext, useEffect } from 'react';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import BlogContext from '../../context/blog/blogContext';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Link } from 'react-router-dom';
+import UserContext from '../../context/user/userContext';
 
 export const HomeSlider = () => {
   const blogContext = useContext(BlogContext);
   const { blogs, searchBlogs } = blogContext;
+  const userContext = useContext(UserContext);
+  const { setUserBlogs, setUser, users, searchUsers } = userContext;
   const sliderposts = blogs.filter((post) =>
     post.x_tags.includes('sliderPost')
   );
 
   useEffect(() => {
     searchBlogs();
+    searchUsers()
   }, []);
   return (
     <Splide
@@ -19,7 +24,7 @@ export const HomeSlider = () => {
         // height: '500px',
         type: 'loop',
         pagination: false,
-        autoplay:5000
+        autoplay: 5000,
       }}
     >
       {sliderposts.map((post) => {
@@ -65,7 +70,23 @@ export const HomeSlider = () => {
                       month: 'short',
                       year: 'numeric',
                     })}{' '}
-                    | <span> {post.x_author}</span>
+                    |{' '}
+                    <span>
+                      <Link
+                        className="author-link"
+                        to={`/author/${post.author}`}
+                        onClick={() => {
+                          const user = users.filter(
+                            (data) => data.id === post.author
+                          );
+
+                          setUser(user[0]);
+                          setUserBlogs(user[0], blogs);
+                        }}
+                      >
+                        {post.x_author}
+                      </Link>
+                    </span>
                   </p>
                 </div>
               </div>

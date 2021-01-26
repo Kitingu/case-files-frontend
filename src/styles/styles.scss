@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   background-color: #eeeeee;
   justify-content: space-between;
-  @media screen and (max-width:780px) {
+  @media screen and (max-width: 780px) {
     justify-content: center;
     margin: auto;
     padding: 10px 20px;
@@ -28,6 +28,8 @@
 .blog-list-img {
   height: 300px;
   width: 300px;
+  overflow: hidden;
+  object-fit: cover;
 }
 .blog-list-img:hover {
   opacity: 0.8;
@@ -46,10 +48,9 @@
   color: #fff;
 }
 .peace {
-
 }
-.author-link{
-  text-decoration: none;
+.author-link {
+  // text-decoration: none;
 }
 
 .blogpost {
@@ -114,5 +115,20 @@
   }
   span {
     color: #707691;
+  }
+}
+.vlog {
+  position: relative;
+}
+.vlog-details {
+  position: absolute;
+  // border: 5px solid yellow;
+  z-index: 2;
+  display: flex;
+  bottom: 20px;
+  color: #fff;
+  justify-content: space-between;
+  .vlog-category {
+    margin-left: 20px;
   }
 }

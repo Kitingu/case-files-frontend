@@ -5,7 +5,7 @@ import React from 'react'
       <footer>
         <div className="copyright">
           <p>
-            &copy; Justice Networks, {new Date().getFullYear()} All rights
+            &copy; Justice Networks {new Date().getFullYear()}, All rights
             reserved.
           </p>
         </div>

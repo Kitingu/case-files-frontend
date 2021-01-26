@@ -24,7 +24,9 @@ const Blogz = ({blogs}) => {
 
             return (
               <div key={post.id} className="blog-list">
-                <div className="blog-post">
+                <div className="blog-post"
+            
+                >
                   <img
                     className="blog-list-img"
                     src={featuredImage}
