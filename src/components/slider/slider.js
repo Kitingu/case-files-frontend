@@ -57,7 +57,7 @@ export const HomeSlider = () => {
                       {
                         `${post.excerpt.rendered}`
                           .replace(/<[^>]*>/g, '')
-                          .split('.')[0]
+                          // .split('.')[0]
                       }
                     </p>
                   </div>

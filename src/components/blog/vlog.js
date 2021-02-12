@@ -1,7 +1,7 @@
 import React, { useContext,useEffect } from 'react';
 import UserContext from '../../context/user/userContext';
 import { Link } from 'react-router-dom';
-import '../../styles/styles.scss'
+import '../../styles/vlog.scss'
 import Iframe from 'react-iframe';
 import BlogContext from '../../context/blog/blogContext';
 
@@ -32,14 +32,14 @@ import BlogContext from '../../context/blog/blogContext';
           frameBorder="0"
         ></Iframe>
         
-        <div className="vlog-details">
+        {/* <div className="vlog-details">
           <p className="vlog-category">Peace</p>
           
           <div>
             <p className="vlog-author">Rosebell</p> 
 
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

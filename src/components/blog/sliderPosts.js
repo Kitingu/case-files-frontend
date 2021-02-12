@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import BlogContext from '../../context/blog/blogContext';
 import UserContext from '../../context/user/userContext';
 
-const Blogz = ({ blogs, classname }) => {
+const Blogz = ({ blogs }) => {
   const userContext = useContext(UserContext);
   const { setUserBlogs, setUser, users, searchUsers } = userContext;
   const blogContext = useContext(BlogContext);
-  let { setBlog } = blogContext;
+  const { setBlog } = blogContext;
 
   useEffect(() => {
     searchUsers();
@@ -16,7 +16,7 @@ const Blogz = ({ blogs, classname }) => {
   return (
     <div>
       {blogs && (
-        <div className={`blog-container ${classname}`}>
+        <div className="blog-container">
           {blogs.map((post) => {
             const featuredImage = post.better_featured_image
               ? post.better_featured_image.source_url

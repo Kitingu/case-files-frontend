@@ -5,7 +5,7 @@ import Intro from "./Intro";
 import Login from "./Login";
 import Signup from "./Signup";
 import "../../assets/auth/common.scss";
-import justice from '../../images/hero-image.jpg';
+import ArchivesHero from '../../images/Archives.png';
 import Hero from "../../components/courts/CourtsHero";
 import Spinner from "../shared/Spinner";
 import Button from "./Button";
@@ -26,7 +26,7 @@ const About = ({ login, signup, spinner }) => {
     <>
       <Spinner spinner={spinner} />
 
-      <Hero backgroundImage={justice} />
+      <Hero backgroundImage={ArchivesHero} />
       <Intro />
       <div
         className="join-network-container"

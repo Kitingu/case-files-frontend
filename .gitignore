@@ -11,6 +11,7 @@
 # production
 /build
 last_known_good_build.zip
+build.zip
 # misc
 .DS_Store
 .env.local

@@ -2,8 +2,13 @@ import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BlogContext from '../../context/blog/blogContext';
 import UserContext from '../../context/user/userContext';
+import '../../styles/paginatedBlogs.scss'
+import '../../assets/courts/cases.scss'
+import Pagination from 'custom_react_pages';
+import back from '../../images/back.png';
+import next from '../../images/next.png';
 
-const Blogz = ({ blogs, classname }) => {
+const BlogsPaginated = ({ blogs, classname }) => {
   const userContext = useContext(UserContext);
   const { setUserBlogs, setUser, users, searchUsers } = userContext;
   const blogContext = useContext(BlogContext);
@@ -16,14 +21,20 @@ const Blogz = ({ blogs, classname }) => {
   return (
     <div>
       {blogs && (
-        <div className={`blog-container ${classname}`}>
-          {blogs.map((post) => {
-            const featuredImage = post.better_featured_image
+        <div className={`blog-container paginated ${classname}`}>
+          <Pagination
+            itemsPerPage={9}
+            activePageStyle={{ backgroundColor: '#7285a5', color: '#fff' }}
+            next={<img src={next} alt="next" />}
+            prev={<img src={back} alt="back" />}
+            data={blogs}
+            pageButtons={10}
+            onePage={(post,index)=>{
+                const featuredImage = post.better_featured_image
               ? post.better_featured_image.source_url
               : `https://via.placeholder.com/450`;
-
-            return (
-              <div key={post.id} className="blog-list">
+                return(
+                <div key={post.id} className="blog-list">
                 <div className="blog-post">
                   <img
                     className="blog-list-img"
@@ -74,11 +85,12 @@ const Blogz = ({ blogs, classname }) => {
                   </p>
                 </div>
               </div>
-            );
-          })}
+            )}}
+          ></Pagination>
+         
         </div>
       )}
     </div>
   );
 };
-export default Blogz;
+export default BlogsPaginated;

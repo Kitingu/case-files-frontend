@@ -7,6 +7,7 @@ import '../../styles/styles.scss';
 import Blogz from './../blog/blogz';
 import Vlog from './../blog/vlog';
 import FooterLinks from '../layout/FooterLinks';
+import BlogsPaginated from './blogPaginated';
 
 export const Blogs = () => {
   const blogContext = useContext(BlogContext);
@@ -15,9 +16,10 @@ export const Blogs = () => {
   const userContext = useContext(UserContext);
   const { searchUsers } = userContext;
 
-  const sliderPosts = blogs.filter((post) =>
-    post.x_tags.includes('sliderPost')
-  );
+  const sliderPosts = blogs
+    .filter((post) => post.x_tags.includes('sliderPost'))
+    .sort(() => Math.random() - 0.5)
+    .slice(0,2);
 
   useEffect(() => {
     searchBlogs();
@@ -27,9 +29,9 @@ export const Blogs = () => {
   return (
     <div>
       <HomeSlider />
-      <Blogz blogs={sliderPosts} />
+      <Blogz blogs={sliderPosts} classname='slider-posts-main' />
       <Vlog blogs={blogs} />
-      <Blogz blogs={blogs} />
+      <BlogsPaginated blogs={blogs} />
       <FooterLinks color="primary-blue"/>
     </div>
   );

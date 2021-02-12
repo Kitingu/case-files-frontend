@@ -1,4 +1,5 @@
 .author-container{
+    padding:40px 0;
     margin: auto;
     width: 90%;
 }
@@ -20,4 +21,13 @@ p{
 
 .about-author{
     font-weight: bold;
+}
+.author-link{
+    text-transform: capitalize;
+}
+.author-details{
+    text-align: justify;
+}
+.blogpost-author{
+    padding:20px 0;
 }
