@@ -5,18 +5,19 @@ import BlogContext from '../../context/blog/blogContext';
 import WpApiContent from '../../WpApiContent';
 import CourtsHero from '../courts/CourtsHero';
 import FooterLinks from '../layout/FooterLinks'
+import AboutImage from '../../images/About_us.png'
 
 export const Blogpost = () => {
   const blogContext = useContext(BlogContext);
   const { currentBlog } = blogContext;
   return (
     <div>
-      <CourtsHero backgroundImage={currentBlog.x_featured_media_original} />
-      <div className="blogpost">
+      <CourtsHero backgroundImage={AboutImage} />
+      <div className="blogpost single-blog">
         {currentBlog.content ? (
           <div>
             <p className="blog-title">{currentBlog.title.rendered}</p>
-            <p className="blogpost-author">{currentBlog.x_author}</p>
+            <span className="blogpost-author">{currentBlog.x_author}</span>
             <WpApiContent content={currentBlog.content.rendered} />
           </div>
         ) : (

@@ -17,6 +17,12 @@
   position: relative;
   margin-left: 5px;
   max-width: 300px;
+  a,
+  a:visited {
+    text-decoration: none;
+    color: #402c73;
+  }
+
   p {
     margin-top: 0;
     font-size: 14px;
@@ -42,15 +48,17 @@
   padding: 5px 10px;
   justify-content: space-between;
 }
-.justice,.peace {
+.justice,
+.peace {
   background-color: #eee;
 }
-.democracy,.equality {
+.democracy,
+.equality {
   background-color: rgb(52, 54, 129);
   color: #fff;
 }
 
-.Uncategorized{
+.Uncategorized {
   display: none;
 }
 .author-link {
@@ -58,16 +66,36 @@
 }
 
 .blogpost {
-  padding:40px 0;
+  padding: 40px 0;
   font-size: 16px;
   color: black;
   margin: auto;
   width: 80%;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
+  // background-color: #eeeeee;
+  p,
+  has-text-color {
+    color: #402c73;
+    padding: 10px 0 !important;
+  }
+  h2,
+  h3 {
+    color: #402c73;
+  }
+  u {
+    text-decoration: none;
+  }
+  ul,
+  ol,
+  li {
+    color: #402c73;
+  }
+  strong {
+  }
 
   a {
-    text-decoration: none;
+    text-decoration: none imp !important;
   }
 }
 .has-text-color {
@@ -100,27 +128,25 @@
 .slider-content-container {
   position: relative;
   display: flex;
-
 }
 .slider-content-div {
-  @media screen and (max-width:500px) {
-    top:40px;
+  @media screen and (max-width: 500px) {
+    top: 40px;
     padding: 10px;
     flex-direction: column;
     width: 90;
-    .slider-excerpt{
-      
+    .slider-excerpt {
       flex-direction: column;
     }
   }
-  @media screen and (max-width:340px) {
+  @media screen and (max-width: 340px) {
     min-width: 320px;
-.slider-category{
-  flex-direction: column;
-  .category-name{
+    .slider-category {
+      flex-direction: column;
+      .category-name {
         display: none;
       }
-}
+    }
   }
 
   min-width: 75%;
@@ -147,28 +173,43 @@
   }
 }
 
-.slider-posts-main{
+.slider-posts-main {
   justify-content: space-around;
-  .blog-list{
-
-    .blog-post{
-      
+  .blog-list {
+    .blog-post {
       max-width: 400px;
     }
-    img{
+    img {
       width: 400px;
     }
   }
-  @media screen and (max-width:1024px){
-    .blog-list{
-
-    .blog-post{
-      
-      max-width: 400px;
-    }
-    img{
-      width: 300px;
+  @media screen and (max-width: 1024px) {
+    .blog-list {
+      .blog-post {
+        max-width: 400px;
+      }
+      img {
+        width: 300px;
+      }
     }
   }
 }
+
+.blog-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  figcaption {
+    font-style: italic;
+  }
 }
