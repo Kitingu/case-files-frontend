@@ -13,7 +13,7 @@ const About = ({ loginAction, error, spinner, auth }) => {
     e.preventDefault();
     loginAction(loginData);
   };
-  console.log("LLLLLLLLLLLLLLLLLLLL", error, spinner, auth);
+  
 
   return (
     <div className="intro-container">

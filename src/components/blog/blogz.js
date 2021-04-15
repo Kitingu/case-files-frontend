@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BlogContext from '../../context/blog/blogContext';
 import UserContext from '../../context/user/userContext';
+import WpApiContent from '../../WpApiContent';
 
 const Blogz = ({ blogs, classname }) => {
   const userContext = useContext(UserContext);
@@ -18,23 +19,12 @@ const Blogz = ({ blogs, classname }) => {
       {blogs && (
         <div className={`blog-container ${classname}`}>
           {blogs.map((post) => {
-            const featuredImage = post.better_featured_image
-              ? post.better_featured_image.source_url
-              : `https://via.placeholder.com/450`;
+            
 
             return (
-              <div key={post.id} className="blog-list">
-                <div className="blog-post">
-                  <img
-                    className="blog-list-img"
-                    src={featuredImage}
-                    alt="featured_image"
-                  />
-                  <h3 className={`category ${post.x_categories}`}>
-                    {post.x_categories}
-                  </h3>
-
-                  <p>
+              <div key={post.id} className="main">
+                <div className="main-blogpost">
+                  <h3>
                     {' '}
                     <Link
                       className="blogpost-title"
@@ -48,30 +38,22 @@ const Blogz = ({ blogs, classname }) => {
                     >
                       {post.title.rendered}{' '}
                     </Link>
-                  </p>
+                  </h3>
+                  <Link
+                    className="author-link italised"
+                    to={`/author/${post.author}`}
+                    onClick={() => {
+                      const user = users.filter(
+                        (data) => data.id === post.author
+                      );
 
-                  <p>
-                    {new Date(post.date).toLocaleString('en-GB', {
-                      day: 'numeric',
-                      month: 'short',
-                      year: 'numeric',
-                    })}{' '}
-                    |{' '}
-                    <Link
-                      className="author-link"
-                      to={`/author/${post.author}`}
-                      onClick={() => {
-                        const user = users.filter(
-                          (data) => data.id === post.author
-                        );
-
-                        setUser(user[0]);
-                        setUserBlogs(user[0], blogs);
-                      }}
-                    >
-                      {post.x_author}
-                    </Link>
-                  </p>
+                      setUser(user[0]);
+                      setUserBlogs(user[0], blogs);
+                    }}
+                  >
+                    by {post.x_author}
+                  </Link>
+                  <WpApiContent content={post.excerpt.rendered} />
                 </div>
               </div>
             );

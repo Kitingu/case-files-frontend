@@ -48,22 +48,6 @@
   padding: 5px 10px;
   justify-content: space-between;
 }
-.justice,
-.peace {
-  background-color: #eee;
-}
-.democracy,
-.equality {
-  background-color: rgb(52, 54, 129);
-  color: #fff;
-}
-
-.Uncategorized {
-  display: none;
-}
-.author-link {
-  // text-decoration: none;
-}
 
 .blogpost {
   padding: 40px 0;
@@ -95,7 +79,7 @@
   }
 
   a {
-    text-decoration: none imp !important;
+    text-decoration: none !important;
   }
 }
 .has-text-color {
@@ -212,4 +196,21 @@
   figcaption {
     font-style: italic;
   }
+}
+// main blogpost
+.main-blogpost {
+  text-align: justify;
+  a,
+  u {
+    text-decoration: none;
+    color: #402c73;
+  }
+  .italised {
+    font-style: italic;
+  }
+}
+
+// video width
+video {
+  width: 100%;
 }

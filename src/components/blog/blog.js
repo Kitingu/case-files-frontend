@@ -17,10 +17,9 @@ export const Blogs = () => {
   const userContext = useContext(UserContext);
   const { searchUsers } = userContext;
 
-    const sliderPosts = blogs
-      .filter((post) => post.x_tags.includes('sliderPost'))
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 2);
+    const mainPost = blogs
+      .filter((post) => post.x_tags.includes('mainPost'));
+      
 
      useEffect(() => {
        searchBlogs();
@@ -31,8 +30,7 @@ export const Blogs = () => {
   return (
     <div>
       <CourtsHero backgroundImage={aboutImage} />
-      <Blogz blogs={sliderPosts} classname="slider-posts-main" />
-      <Vlog />
+      <Blogz blogs={mainPost}/>
       <BlogsPaginated blogs={blogs} />
       <FooterLinks color="primary-blue" />
     </div>

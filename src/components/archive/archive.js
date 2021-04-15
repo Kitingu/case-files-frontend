@@ -23,22 +23,20 @@ const towns = [
   'Yei',
 ];
 const token = localStorage.getItem('auth_access_token');
-console.log(token);
 const config = {
   headers: { Authorization: `Bearer ${token}` },
 };
-const getData = async () => {
-  const response = await axios.get(
-    'https://app.justicenetworksea.org/api/v1/cases',
-    config
-  );
+// const getData = async () => {
+//   const response = await axios.get(
+//     'https://app.justicenetworksea.org/api/v1/cases',
+//     config
+//   );
 
-  console.log('<<<<<<<<<<<<<<<<', response.data.data);
-  return response;
-};
-getData();
-let archiveData = getData().then(data)
-console.log('<<<<<<',archiveData)
+//   return response;
+// };
+// getData();
+// let archiveData = getData().then(data)
+
 
 const Archive = () => {
   const [current, setCurrent] = useState('Juba');
