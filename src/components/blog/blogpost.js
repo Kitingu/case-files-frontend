@@ -16,7 +16,7 @@ export const Blogpost = () => {
       <div className="blogpost single-blog">
         {currentBlog.content ? (
           <div>
-            <h2 className="blog-title">{currentBlog.title.rendered}</h2>
+            <h3 className="blog-title">{currentBlog.title.rendered}</h3>
             <span className="blogpost-author">{currentBlog.x_author}</span>
             <WpApiContent content={currentBlog.content.rendered} />
           </div>

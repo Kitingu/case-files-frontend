@@ -51,12 +51,11 @@
 
 .blogpost {
   padding: 40px 0;
-  font-size: 16px;
+  // font-size: 16px;
   color: black;
   margin: auto;
   width: 80%;
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
   // background-color: #eeeeee;
   p,
   has-text-color {
@@ -207,6 +206,9 @@
   }
   .italised {
     font-style: italic;
+  }
+  p{
+    padding-top: 10px;
   }
 }
 

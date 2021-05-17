@@ -4,15 +4,11 @@ import BlogContext from '../../context/blog/blogContext';
 import UserContext from '../../context/user/userContext';
 import WpApiContent from '../../WpApiContent';
 
-const Blogz = ({ blogs, classname }) => {
+const Blogz = ({ blogs, users, classname }) => {
   const userContext = useContext(UserContext);
-  const { setUserBlogs, setUser, users, searchUsers } = userContext;
+  const { setUserBlogs, setUser } = userContext;
   const blogContext = useContext(BlogContext);
   let { setBlog } = blogContext;
-
-  useEffect(() => {
-    searchUsers();
-  }, []);
 
   return (
     <div>

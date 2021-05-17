@@ -9,6 +9,7 @@ import FooterLinks from '../layout/FooterLinks';
 const Author = () => {
   const userContext = useContext(UserContext);
   const { currentUser, userBlogs } = userContext;
+  
 
   return (
     <div>
@@ -24,6 +25,18 @@ const Author = () => {
             <p className="author-details">
               <WpApiContent content={currentUser.description} />
             </p>
+            {currentUser.url ? (
+              <a
+                href={currentUser.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {' '}
+                read more
+              </a>
+            ) : (
+              ''
+            )}
           </div>
         ) : (
           <Redirect to="/blog" />

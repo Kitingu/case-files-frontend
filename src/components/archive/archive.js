@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Pagination from 'custom_react_pages';
 import back from '../../images/back.png';
@@ -9,7 +9,7 @@ import CourtsHero from '../courts/CourtsHero';
 import ArchivesHero from '../../images/Archives.png';
 import archivesData from './data';
 import axios from 'axios';
-import data from '../courts/data';
+// import data from '../courts/data';
 
 const towns = [
   'Case summary archive reports',
@@ -22,25 +22,39 @@ const towns = [
   'Yambio',
   'Yei',
 ];
-const token = localStorage.getItem('auth_access_token');
-const config = {
-  headers: { Authorization: `Bearer ${token}` },
-};
-// const getData = async () => {
-//   const response = await axios.get(
-//     'https://app.justicenetworksea.org/api/v1/cases',
-//     config
-//   );
 
-//   return response;
-// };
-// getData();
-// let archiveData = getData().then(data)
 
 
 const Archive = () => {
+  const [responz, setResponz] = useState([]);
   const [current, setCurrent] = useState('Juba');
-  const pdfs = /([a-zA-Z0-9\s_\\.\-\(\):])+(.pdf)$/
+  const pdfs = /([a-zA-Z0-9\s_\\.\-\(\):])+(.pdf)$/;
+  const token = localStorage.getItem('auth_access_token');
+  const config = {
+    headers: { Authorization: `Bearer ${token}` },
+  };
+
+  const getData = async () => {
+    const data = await axios.get(
+      'https://app.justicenetworksea.org/api/v1/cases',
+      config
+    ).then((reponse)=>{
+      setResponz(reponse.data)
+    });
+    // setResponz(data);
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+  // console.log(typeof(responz));
+ 
+
+  
+  const hoe = responz.data
+  
+  
+  // console.log(data)
+
 
   return (
     <>
@@ -57,6 +71,7 @@ const Archive = () => {
             });
             return (
               <p
+              key={town}
                 className={`location active-${town === current}`}
                 onClick={() => setCurrent(town)}
               >
@@ -68,28 +83,30 @@ const Archive = () => {
         <div className="main-content">
           {current === 'Case summary archive reports' ? (
             <div>
-              { archivesData.filter(archive=> archive.location === 'Case summary archive reports').map(newArchive=>{
-                return (
-                  <div className="case-summary">
-                    <p>
-                      <strong>{newArchive.name} </strong>
-                    </p>
-                    <a href={newArchive.documents[0].doc_url}>
-                      {pdfs.test(newArchive.documents[0].doc_url) ? (
-                        <FontAwesomeIcon icon="file-pdf" />
-                      ) : (
-                        <FontAwesomeIcon icon="file-word" />
-                      )}{' '}
-                      download
-                    </a>
-                    {console.log(newArchive.documents[0].doc_url)}
-                  </div>
-                );
-              }
-               
-              )}
-             
-               </div>
+              {archivesData
+                .filter(
+                  (archive) =>
+                    archive.location === 'Case summary archive reports'
+                )
+                .map((newArchive) => {
+                  return (
+                    <div key={newArchive.id} className="case-summary">
+                      <p>
+                        <strong>{newArchive.name} </strong>
+                      </p>
+                      <a href={newArchive.documents[0].doc_url}>
+                        {pdfs.test(newArchive.documents[0].doc_url) ? (
+                          <FontAwesomeIcon icon="file-pdf" />
+                        ) : (
+                          <FontAwesomeIcon icon="file-word" />
+                        )}{' '}
+                        download
+                      </a>
+                      {console.log(newArchive.documents[0].doc_url)}
+                    </div>
+                  );
+                })}
+            </div>
           ) : (
             <Pagination
               itemsPerPage={4}
@@ -101,12 +118,12 @@ const Archive = () => {
                 (archive) => archive.location === current
               )}
               onePage={(archive, index) => (
-                <div className="archive">
+                <div key={index} className="archive">
                   <h3>{archive.name}</h3>
                   <p>{archive.summary}</p>
                   {archive.documents.map((doc) => {
                     return (
-                      <div className="download-buttons">
+                      <div key={doc.doc_url} className="download-buttons">
                         <button type="button">
                           <a href={doc.doc_url}>
                             {' '}
@@ -129,6 +146,6 @@ const Archive = () => {
       </div>
     </>
   );
-};
+};;
 
 export default Archive;

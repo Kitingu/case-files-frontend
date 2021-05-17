@@ -2,11 +2,20 @@
     padding:40px 0;
     margin: auto;
     width: 90%;
+    a{
+        text-decoration: none;
+        text-transform: capitalize;
+    }
 }
 .profile-image {
 display: flex;
-align-items: baseline;
+align-items: center;
+align-content: flex-start;
+flex-direction: column;
 flex-wrap: wrap;
+@media screen and (max-width:600px) {
+    align-content: center;
+}
 img{
     height:200px;
     width: 200px;
@@ -21,12 +30,15 @@ p{
 
 .about-author{
     font-weight: bold;
+    text-align: center;
 }
 .author-link{
     text-transform: capitalize;
 }
 .author-details{
     text-align: justify;
+    white-space: break-spaces;
+    
 }
 .blogpost-author{
     padding:20px 0;

@@ -12,10 +12,10 @@ import aboutImage from '../../images/About_us.png'
 
 export const Blogs = () => {
   const blogContext = useContext(BlogContext);
-  let { blogs, searchBlogs, setBlog } = blogContext;
+  let { blogs, searchBlogs } = blogContext;
 
   const userContext = useContext(UserContext);
-  const { searchUsers } = userContext;
+  const { searchUsers,users } = userContext;
 
     const mainPost = blogs
       .filter((post) => post.x_tags.includes('mainPost'));
@@ -24,14 +24,15 @@ export const Blogs = () => {
      useEffect(() => {
        searchBlogs();
        searchUsers();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
      }, []);
 
 
   return (
     <div>
       <CourtsHero backgroundImage={aboutImage} />
-      <Blogz blogs={mainPost}/>
-      <BlogsPaginated blogs={blogs} />
+      <Blogz blogs={mainPost} users={users} />
+      <BlogsPaginated blogs={blogs} users={users} />
       <FooterLinks color="primary-blue" />
     </div>
   );

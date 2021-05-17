@@ -8,15 +8,11 @@ import Pagination from 'custom_react_pages';
 import back from '../../images/back.png';
 import next from '../../images/next.png';
 
-const BlogsPaginated = ({ blogs, classname }) => {
+const BlogsPaginated = ({ blogs,users, classname }) => {
   const userContext = useContext(UserContext);
-  const { setUserBlogs, setUser, users, searchUsers } = userContext;
+  const { setUserBlogs, setUser } = userContext;
   const blogContext = useContext(BlogContext);
-  let { setBlog } = blogContext;
-
-  useEffect(() => {
-    searchUsers();
-  }, []);
+  const { setBlog } = blogContext;
 
   return (
     <div>
