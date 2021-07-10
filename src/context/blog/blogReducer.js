@@ -1,5 +1,5 @@
-import React from 'react';
-import { GET_BLOGS, SET_BLOG, SET_LOADING, SET_USER } from '../types';
+// import React from 'react';
+import { GET_BLOGS, SET_BLOG, SET_LOADING } from '../types';
 
 const blogReducer = (state, action) => {
   switch (action.type) {

@@ -5,7 +5,6 @@ import CourtsHero from '../courts/CourtsHero';
 import UserContext from '../../context/user/userContext';
 import '../../styles/styles.scss';
 import Blogz from './../blog/blogz';
-import Vlog from './../blog/vlog';
 import FooterLinks from '../layout/FooterLinks';
 import BlogsPaginated from './blogPaginated';
 import aboutImage from '../../images/About_us.png'

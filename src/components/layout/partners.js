@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
 import Swiper from 'react-id-swiper';
 
 import './partner.scss';

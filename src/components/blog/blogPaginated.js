@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import BlogContext from '../../context/blog/blogContext';
 import UserContext from '../../context/user/userContext';
@@ -8,11 +8,12 @@ import Pagination from 'custom_react_pages';
 import back from '../../images/back.png';
 import next from '../../images/next.png';
 
-const BlogsPaginated = ({ blogs,users, classname }) => {
+const BlogsPaginated = ({ blogs, users, classname }) => {
   const userContext = useContext(UserContext);
   const { setUserBlogs, setUser } = userContext;
   const blogContext = useContext(BlogContext);
   const { setBlog } = blogContext;
+  console.log(users)
 
   return (
     <div>
@@ -23,7 +24,7 @@ const BlogsPaginated = ({ blogs,users, classname }) => {
             activePageStyle={{ backgroundColor: '#7285a5', color: '#fff' }}
             next={<img src={next} alt="next" />}
             prev={<img src={back} alt="back" />}
-            data={blogs.filter(blog=>blog.id !== parseInt('189'))}
+            data={blogs.filter((blog) => blog.id !== parseInt('189'))}
             pageButtons={10}
             onePage={(post, index) => {
               const featuredImage = post.better_featured_image

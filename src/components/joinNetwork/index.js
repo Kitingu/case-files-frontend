@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { login } from "../../redux/actions/auth/login";
 import Intro from "./Intro";
@@ -8,7 +8,6 @@ import "../../assets/auth/common.scss";
 import ArchivesHero from '../../images/Archives.png';
 import Hero from "../../components/courts/CourtsHero";
 import Spinner from "../shared/Spinner";
-import Button from "./Button";
 import { NavLink } from "react-router-dom";
 import FooterLinks from '../layout/FooterLinks';
 

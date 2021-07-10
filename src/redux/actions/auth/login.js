@@ -1,4 +1,4 @@
-import { LOGIN_SUCCESS, ERROR } from "../../actionTypes/index";
+import { LOGIN_SUCCESS } from "../../actionTypes/index";
 import apiCall from "../../../utils/api";
 import { storeToken } from "../../../utils/authHelper";
 import { setError, setSpinner } from "../shared";

@@ -5,8 +5,6 @@ import legalData from './legal-narratives';
 import { Link } from 'react-router-dom';
 import CourtsHero from '../courts/CourtsHero';
 import legalActivismHero from '../../images/Legal_Activists.png';
-import hero2 from '../../images/activism-2.jpg';
-import hero4 from '../../images/activism-4.jpg';
 
 
 

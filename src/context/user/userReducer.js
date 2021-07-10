@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { GET_USERS, SET_USER_BLOGS, SET_USER } from '../types';
 
 const userReducer = (state, action) => {

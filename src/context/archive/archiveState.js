@@ -21,7 +21,7 @@ const ArchiveState = (props) => {
        'https://app.justicenetworksea.org/api/v1/cases',
        config
      );
-    dispatch({ type: GET_BLOGS, payload: res.data });
+    dispatch({ type: GET_BLOGS, payload: Response.data });
   };
   
 

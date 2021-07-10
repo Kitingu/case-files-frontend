@@ -51,6 +51,7 @@ export default () => {
   const [slideData, setSlideData] = useState([]);
   const [page, setPage] = useState(0);
   const [itemPerSlide, setItemsPerSlide] = useState(3);
+  // eslint-disable-next-line no-unused-vars
   const [width, height] = useWindowSize();
 
   useEffect(() => {

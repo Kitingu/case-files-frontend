@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactHtmlParser, { convertNodeToElement } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 import '../../assets/resources/resources.scss';
 import { Link } from 'react-router-dom';
 import CourtsHero from '../courts/CourtsHero';
@@ -68,7 +68,7 @@ Rachel Ibreck, and Naomi Pendle, 2017, Community Security and Justice under Unit
     id: 6,
     type: 'Weblinks',
     content: `<div>
-   <p> <img src='http://justicenetworksea.org/namati.jpeg' alt="namati.org"> </img> </p>
+   <p> <img src='https://justicenetworksea.org/namati.jpeg' alt="namati.org"> </img> </p>
     </hr>
 <a target="_blank" rel="noopener noreferrer" class="resource-button" class="resource-button" href='https://namati.org/'> Namati, Legal Empowerment Network </a>
 </div>

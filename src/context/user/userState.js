@@ -16,7 +16,7 @@ const UserState = (props) => {
 
   const searchUsers = async () => {
     const res = await axios.get(
-      'https://www.blog.justicenetworksea.org/wp-json/wp/v2/users'
+      'https://www.blog.justicenetworksea.org/wp-json/wp/v2/users?per_page=100'
     );
     dispatch({ type: GET_USERS, payload: res.data });
   };

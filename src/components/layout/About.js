@@ -53,6 +53,7 @@ const CompanyDetails = () => {
                     </>
                   )}
                   <Link
+                  to=""
                     onClick={() =>
                       setContentHead(contentHead === box.id ? '' : box.id)
                     }

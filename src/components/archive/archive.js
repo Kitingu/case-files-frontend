@@ -1,4 +1,5 @@
-import React, { useState,useEffect } from 'react';
+/* eslint-disable no-useless-escape */
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Pagination from 'custom_react_pages';
 import back from '../../images/back.png';
@@ -9,7 +10,6 @@ import CourtsHero from '../courts/CourtsHero';
 import ArchivesHero from '../../images/Archives.png';
 import archivesData from './data';
 import axios from 'axios';
-// import data from '../courts/data';
 
 const towns = [
   'Case summary archive reports',
@@ -23,10 +23,7 @@ const towns = [
   'Yei',
 ];
 
-
-
 const Archive = () => {
-  const [responz, setResponz] = useState([]);
   const [current, setCurrent] = useState('Juba');
   const pdfs = /([a-zA-Z0-9\s_\\.\-\(\):])+(.pdf)$/;
   const token = localStorage.getItem('auth_access_token');
@@ -35,26 +32,15 @@ const Archive = () => {
   };
 
   const getData = async () => {
+    // eslint-disable-next-line no-unused-vars
     const data = await axios.get(
       'https://app.justicenetworksea.org/api/v1/cases',
       config
-    ).then((reponse)=>{
-      setResponz(reponse.data)
-    });
-    // setResponz(data);
+    );
   };
   useEffect(() => {
     getData();
-  }, []);
-  // console.log(typeof(responz));
- 
-
-  
-  const hoe = responz.data
-  
-  
-  // console.log(data)
-
+  });
 
   return (
     <>
@@ -71,7 +57,7 @@ const Archive = () => {
             });
             return (
               <p
-              key={town}
+                key={town}
                 className={`location active-${town === current}`}
                 onClick={() => setCurrent(town)}
               >
@@ -146,6 +132,6 @@ const Archive = () => {
       </div>
     </>
   );
-};;
+};
 
 export default Archive;

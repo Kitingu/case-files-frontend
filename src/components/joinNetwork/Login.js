@@ -39,14 +39,14 @@ const About = ({ loginAction, error, spinner, auth }) => {
     if(error.status === 401) {
       toast('error', 'wrong password or email');
     }
-  }, [error.status])
+  }, [error.status,history])
 
   useEffect(() => {
     if(auth.login?.status === 200) {
       toast('success', 'Successfully logged in');
       history.push("/archives");
     }
-  }, [auth.login])
+  }, [auth.login,history])
 
   return (
     <>

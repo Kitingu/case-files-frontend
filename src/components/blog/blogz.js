@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import BlogContext from '../../context/blog/blogContext';
 import UserContext from '../../context/user/userContext';
@@ -15,8 +15,6 @@ const Blogz = ({ blogs, users, classname }) => {
       {blogs && (
         <div className={`blog-container ${classname}`}>
           {blogs.map((post) => {
-            
-
             return (
               <div key={post.id} className="main">
                 <div className="main-blogpost">

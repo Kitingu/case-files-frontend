@@ -1,9 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import placeholder from "../../images/placeholder.png";
 import "../../assets/JoinNetwork.scss";
 import publications from "../../images/publications.jpg";
-import { Link } from "react-router-dom";
 const CompanyDetails = () => {
   return (
     <>
